@@ -1,0 +1,1511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ssm:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4ddda9b-c81e-4647-a818-b74f9555bb5e" name="Default Changelist" comment="毕业设计">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ssm_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/spring/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/spring/applicationContext-transaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/controller/InfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/controller/Tools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/controller/UploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/dao/InfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/dao/InfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/entity/Gsyh.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/entity/Info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/entity/Infospan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/entity/Infotgrs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/entity/Jobjl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/entity/Ptyh.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/service/InfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/service/imp/InfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/com/fy/service/imp/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/spring/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/spring/applicationContext-transaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/classes/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/asm-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/aspectjweaver-1.6.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/cglib-2.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/commons-pool-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/fastjson-1.2.50.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/jackson-annotations-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/jackson-core-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/jackson-databind-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/javassist-3.17.1-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/javax.servlet-api-4.0.0-b07.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/log4j-api-2.0-rc1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/log4j-core-2.0-rc1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/mybatis-3.2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/slf4j-api-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-aop-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-aspects-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-beans-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-context-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-context-support-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-core-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-expression-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-jdbc-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-orm-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-test-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-tx-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/css/gsindexcss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/css/mycss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/css/ptyhinfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/gsindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/adver1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/adver2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/adver3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/adver4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/canva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/canvainput.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/1151dfec-7143-44f2-9de3-91c5b92b6da1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/470cd8d2-f025-463c-a10d-3db5ac3f0460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/61c3d1e8-7ead-4352-8450-f1e688258901.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/782374ae-65c0-41f4-a164-74f23fdae3c7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/7bc0b781-afef-4077-87d4-216144e64372.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/99a02ec1-9419-4fba-8044-caaa0418f988.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/b1b7f7da-76ce-4197-8ae0-742f941f4a7a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/b1f4fab7-ae18-41b4-bda8-ef931797fa29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/c1c48355-1524-48b2-b648-bd5f729d6b31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/c5183732-0528-4610-948a-648305f31d57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/dac2f136-621a-4de9-bee1-80667939172e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/ecae5ec7-bf91-4be7-8727-9b9faf5cc678.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/ff87c925-0270-4ea8-a98b-43dc9744c769.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/gsimage/lalal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/nojianli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/noshoucang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/timg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/topcanva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/216a5ddc-77b4-4939-901a-c4601337458d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/27b2742f-45fd-4041-b50d-b7dd0848966c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/51f2a7cd-d361-44cf-b380-4fc37013ad37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/b95bcf3f-1377-477f-837b-66ae0d374d38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/c7729b81-f23d-4288-a161-44a77daf7d08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/d6d54d92-3027-4ae9-a255-c94e70bd19ea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/image/yhimage/lalal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/05ab906b-b5fd-4e4d-acd8-817427366762.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/05f211b1-0766-43b8-ad95-a029227a185b.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/11bcf9ed-da37-45f5-bbfd-07efd905f4fd.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/24a0073c-cc43-46c4-bcc5-1a47c1e1e9cd.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/42ce0b44-c497-4ae1-bfb9-03215ecf9f22.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/62281d2f-6639-40be-bca3-745a4ad5a059.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/682abf7d-00c4-4b6f-940c-ae75f7a3fc5d.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/6f8072a1-2b9b-4dee-a728-f54903f0a9bc.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/7c00c15e-9813-4e2d-b099-3ebfd2fd3a18.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/9b141506-3f90-40e2-9223-60ad0e2c1179.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/a0cbdde8-9876-4be8-bada-7d405650328e.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/a4e4cddf-9e01-4148-820f-c474de06a9c9.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/cce38f88-dd8e-41e8-9ff0-44b0329c9f09.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/ceb31b9e-b9af-42b4-b25c-d9b6fe5276eb.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/d060b3d7-797d-4b92-9e73-09168254ce1c.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/dced7a67-4359-48e1-aa2a-8ac383cfa3f3.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jl/eec03aa9-0926-4118-9a4f-03c8fcead10d.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jobcontent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/jobinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/fenpage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/fenpagejlflag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/fenpagetable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/gsindexjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/jobcontentjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/jq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/myjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/js/ptyhinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/ptyhinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/ssm_war_exploded/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/controller/InfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/controller/Tools.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/controller/UploadController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/dao/InfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/dao/InfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/entity/Gsyh.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/entity/Info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/entity/Infospan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/entity/Infotgrs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/entity/Jobjl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/entity/Ptyh.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/service/InfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/service/imp/InfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/com/fy/service/imp/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/mybatis/SqlMapConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/spring/applicationContext-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/spring/applicationContext-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/spring/applicationContext-transaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/renren/spring/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/controller/InfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/controller/Tools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/dao/InfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/dao/InfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/dao/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/entity/Gsyh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/entity/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/entity/Infospan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/entity/Infotgrs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/entity/Jobjl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/entity/Ptyh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/service/InfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/service/imp/InfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fy/service/imp/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/asm-3.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/aspectjweaver-1.6.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/cglib-2.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-pool-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.50.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-annotations-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-core-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jackson-databind-2.9.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javassist-3.17.1-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/javax.servlet-api-4.0.0-b07.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-api-2.0-rc1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/log4j-core-2.0-rc1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mybatis-3.2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-api-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/slf4j-log4j12-1.7.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aop-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-aspects-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-context-support-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-expression-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-orm-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-test-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/gsindexcss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/mycss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/ptyhinfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/gsindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/adver1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/adver2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/adver3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/adver4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/canva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/canvainput.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/1151dfec-7143-44f2-9de3-91c5b92b6da1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/470cd8d2-f025-463c-a10d-3db5ac3f0460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/61c3d1e8-7ead-4352-8450-f1e688258901.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/782374ae-65c0-41f4-a164-74f23fdae3c7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/7bc0b781-afef-4077-87d4-216144e64372.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/99a02ec1-9419-4fba-8044-caaa0418f988.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/b1b7f7da-76ce-4197-8ae0-742f941f4a7a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/b1f4fab7-ae18-41b4-bda8-ef931797fa29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/c1c48355-1524-48b2-b648-bd5f729d6b31.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/c5183732-0528-4610-948a-648305f31d57.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/dac2f136-621a-4de9-bee1-80667939172e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/ecae5ec7-bf91-4be7-8727-9b9faf5cc678.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/ff87c925-0270-4ea8-a98b-43dc9744c769.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/gsimage/lalal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/nojianli.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/noshoucang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/timg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/topcanva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/216a5ddc-77b4-4939-901a-c4601337458d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/27b2742f-45fd-4041-b50d-b7dd0848966c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/51f2a7cd-d361-44cf-b380-4fc37013ad37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/b95bcf3f-1377-477f-837b-66ae0d374d38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/c7729b81-f23d-4288-a161-44a77daf7d08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/d6d54d92-3027-4ae9-a255-c94e70bd19ea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/yhimage/lalal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/05ab906b-b5fd-4e4d-acd8-817427366762.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/05f211b1-0766-43b8-ad95-a029227a185b.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/11bcf9ed-da37-45f5-bbfd-07efd905f4fd.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/24a0073c-cc43-46c4-bcc5-1a47c1e1e9cd.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/42ce0b44-c497-4ae1-bfb9-03215ecf9f22.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/62281d2f-6639-40be-bca3-745a4ad5a059.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/682abf7d-00c4-4b6f-940c-ae75f7a3fc5d.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/6f8072a1-2b9b-4dee-a728-f54903f0a9bc.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/7c00c15e-9813-4e2d-b099-3ebfd2fd3a18.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/9b141506-3f90-40e2-9223-60ad0e2c1179.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/a0cbdde8-9876-4be8-bada-7d405650328e.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/a4e4cddf-9e01-4148-820f-c474de06a9c9.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/cce38f88-dd8e-41e8-9ff0-44b0329c9f09.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/ceb31b9e-b9af-42b4-b25c-d9b6fe5276eb.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/d060b3d7-797d-4b92-9e73-09168254ce1c.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/dced7a67-4359-48e1-aa2a-8ac383cfa3f3.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jl/eec03aa9-0926-4118-9a4f-03c8fcead10d.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jobcontent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jobinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/fenpage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/fenpagejlflag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/fenpagetable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/gsindexjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jobcontentjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/jq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/myjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/js/ptyhinfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/ptyhinfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/test.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/gsindexjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9589">
+              <caret line="365" column="56" lean-forward="true" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
+              <folding>
+                <element signature="n#style#0;n#h4#0;n#div#0;n#li#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/gsindex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="185" column="34" lean-forward="true" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/gsindexcss.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jobcontent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/mycss.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="438" column="7" selection-start-line="438" selection-start-column="7" selection-end-line="438" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/jl/9b141506-3f90-40e2-9223-60ad0e2c1179.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/spring/springmvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="xml" />
+        <option value="FxmlFile" />
+        <option value="XSLT Stylesheet" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>shoucang()</find>
+      <find>show3</find>
+      <find>收藏</find>
+      <find>待处理</find>
+      <find>showjobjl</find>
+      <find>showjl</find>
+      <find>findyhinthisjobcontent</find>
+      <find>0</find>
+      <find>1</find>
+      <find>'image/timg.jpg'</find>
+      <find>infoview</find>
+      <find>投简</find>
+      <find>shownewuserinfo</find>
+      <find>showjlflag</find>
+      <find>postjl</find>
+      <find>完善</find>
+      <find>'show'</find>
+      <find>！</find>
+      <find>成功</find>
+      <find>发布</find>
+      <find>&quot;over&quot;</find>
+      <find>post</find>
+      <find>findzpjoblist</find>
+      <find>updatenewinfo</find>
+      <find>company1</find>
+      <find>招聘信息发布</find>
+      <find>jobcontent</find>
+      <find>id=&quot;jobcontent&quot;</find>
+      <find>postinfo1</find>
+      <find>postinfo</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="cool-fang" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/new_login.html" />
+        <option value="$PROJECT_DIR$/src/com/fy/tool/Tools.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/DownLoadUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/testUploadfile.java" />
+        <option value="$PROJECT_DIR$/web/test.jsp" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/FileDownloadController.java" />
+        <option value="$PROJECT_DIR$/web/test2.html" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Ptyh.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/jobjl.java" />
+        <option value="$PROJECT_DIR$/web/js/fenpagetable.js" />
+        <option value="$PROJECT_DIR$/web/css/ptyhinfo.css" />
+        <option value="$PROJECT_DIR$/web/ptyhinfo.html" />
+        <option value="$PROJECT_DIR$/web/js/fenpagejlflag.js" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/showjl.java" />
+        <option value="$PROJECT_DIR$/web/js/fenpage.js" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Info.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Map.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Infospan.java" />
+        <option value="$PROJECT_DIR$/config/mybatis/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/web/test.html" />
+        <option value="$PROJECT_DIR$/config/spring/springmvc.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/web/jobinfo.html" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/info_tgrs.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Info_tgrs.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Infotgrs.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/tools.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/Tools.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/service/InfoService.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/service/imp/InfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/dao/InfoDao.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/InfoController.java" />
+        <option value="$PROJECT_DIR$/web/register.html" />
+        <option value="$PROJECT_DIR$/web/js/ptyhinfo.js" />
+        <option value="$PROJECT_DIR$/src/com/fy/entity/Jobjl.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/web/js/myjs.js" />
+        <option value="$PROJECT_DIR$/web/js/jobcontentjs.js" />
+        <option value="$PROJECT_DIR$/src/com/fy/service/imp/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/fy/dao/InfoDao.xml" />
+        <option value="$PROJECT_DIR$/src/com/fy/dao/UserDao.xml" />
+        <option value="$PROJECT_DIR$/web/js/gsindexjs.js" />
+        <option value="$PROJECT_DIR$/web/gsindex.html" />
+        <option value="$PROJECT_DIR$/web/css/gsindexcss.css" />
+        <option value="$PROJECT_DIR$/web/jobcontent.html" />
+        <option value="$PROJECT_DIR$/web/login.html" />
+        <option value="$PROJECT_DIR$/web/css/mycss.css" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="755" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="renren" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="renren" type="b2602c69:ProjectViewProjectNode" />
+              <item name="renren" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cool\Desktop\renren\web\image" />
+      <recent name="C:\Users\cool\Desktop\renren\web\jl" />
+      <recent name="C:\Users\cool\Desktop\renren\src\com\fy\controller" />
+      <recent name="C:\Users\cool\Desktop\renren\web\WEB-INF\lib" />
+      <recent name="C:\Users\cool\Desktop\renren\src\com\fy\dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ssm\web" />
+      <recent name="D:\ssm\web\html" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration name="index.do" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/ssm_war_exploded/index.do">
+      <method v="2" />
+    </configuration>
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.41" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk1.8.0_191">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ssm:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ssm_war_exploded" />
+          </settings>
+        </artifact>
+        <file path="$PROJECT_DIR$/web/image">
+          <settings>
+            <option name="CONTEXT_PATH" value="ssm_war_exploded/image" />
+          </settings>
+        </file>
+        <file path="$PROJECT_DIR$/web/image/yhimage">
+          <settings>
+            <option name="CONTEXT_PATH" value="ssm_war_exploded/image/yhimage" />
+          </settings>
+        </file>
+        <file path="$PROJECT_DIR$/web/image/gsimage">
+          <settings>
+            <option name="CONTEXT_PATH" value="ssm_war_exploded/image/gsimage" />
+          </settings>
+        </file>
+        <file path="$PROJECT_DIR$/web/jl">
+          <settings>
+            <option name="CONTEXT_PATH" value="ssm_war_exploded/jl" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ssm" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51237" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ssm:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.do" />
+      <item itemvalue="Tomcat Server.tomcat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.do" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4ddda9b-c81e-4647-a818-b74f9555bb5e" name="Default Changelist" comment="" />
+      <created>1579525482684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579525482684</updated>
+      <workItem from="1579525487851" duration="3409000" />
+      <workItem from="1579529502197" duration="42000" />
+      <workItem from="1579580535942" duration="840000" />
+      <workItem from="1579585140185" duration="684000" />
+      <workItem from="1580181133687" duration="7523000" />
+      <workItem from="1580270784443" duration="8389000" />
+      <workItem from="1580707171435" duration="42338000" />
+      <workItem from="1581046608355" duration="6502000" />
+      <workItem from="1581064501560" duration="11785000" />
+      <workItem from="1581137850062" duration="1008000" />
+      <workItem from="1581144755139" duration="2620000" />
+      <workItem from="1581482436438" duration="327000" />
+      <workItem from="1581482843177" duration="6565000" />
+      <workItem from="1581494966939" duration="18756000" />
+      <workItem from="1581560439623" duration="30917000" />
+      <workItem from="1581599322472" duration="3801000" />
+      <workItem from="1581604108343" duration="5871000" />
+      <workItem from="1581646791572" duration="5393000" />
+      <workItem from="1581730080610" duration="108694000" />
+      <workItem from="1582107708539" duration="21199000" />
+      <workItem from="1582184213171" duration="2166000" />
+      <workItem from="1582187824303" duration="84472000" />
+      <workItem from="1582539883816" duration="4839000" />
+      <workItem from="1582546347229" duration="76898000" />
+      <workItem from="1582881148388" duration="30715000" />
+      <workItem from="1583030146024" duration="3428000" />
+      <workItem from="1583042526857" duration="435000" />
+      <workItem from="1583042993006" duration="327000" />
+      <workItem from="1583043477944" duration="60693000" />
+      <workItem from="1583287827849" duration="72687000" />
+      <workItem from="1583495124607" duration="8832000" />
+      <workItem from="1583559700745" duration="50054000" />
+      <workItem from="1583730952800" duration="21369000" />
+      <workItem from="1583819902656" duration="719000" />
+      <workItem from="1583821132213" duration="138000" />
+      <workItem from="1583821801237" duration="1152000" />
+      <workItem from="1583826347771" duration="142000" />
+      <workItem from="1583830756438" duration="44115000" />
+      <workItem from="1584162054965" duration="8122000" />
+      <workItem from="1584408008777" duration="91701000" />
+      <workItem from="1584936624239" duration="60000" />
+      <workItem from="1584936852368" duration="76742000" />
+      <workItem from="1585467428215" duration="859000" />
+      <workItem from="1585468953546" duration="11771000" />
+      <workItem from="1586680229924" duration="30505000" />
+      <workItem from="1587086654808" duration="2241000" />
+      <workItem from="1587264898679" duration="59554000" />
+      <workItem from="1587655582658" duration="1123000" />
+      <workItem from="1587656956457" duration="3501000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1036023000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49714285" visible="true" weight="0.20911528" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.5007072" side_tool="true" weight="0.16286863" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.26449788" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32956153" />
+      <window_info anchor="bottom" id="Application Servers" order="6" weight="0.32956153" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50469166" side_tool="true" weight="0.3960396" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32956153" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.4953083" weight="0.3045326" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49714285" visible="true" weight="0.18230563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" sideWeight="0.5007072" side_tool="true" weight="0.16286863" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2659123" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39886847" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32956153" />
+      <window_info anchor="bottom" id="Application Servers" order="6" weight="0.32956153" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5033512" side_tool="true" weight="0.4115983" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32956153" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32956153" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run" order="15" sideWeight="0.4966488" visible="true" weight="0.11881188" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3297587" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="毕业设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="毕业设计" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="17829" column="12" selection-start-line="17829" selection-start-column="12" selection-end-line="17829" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="504" selection-start-line="504" selection-end-line="504" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mybatis/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/gsimage/timg.jpg" />
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-4.3.0.RELEASE.jar!/org/springframework/web/servlet/config/spring-mvc-4.3.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-515">
+          <caret line="662" column="4" selection-start-line="662" selection-start-column="4" selection-end-line="662" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="29" column="78" selection-start-line="29" selection-end-line="30" />
+          <folding>
+            <element signature="e#1184#1200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/image/404.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/fenpage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/fenpagejlflag.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="104" column="3" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/entity/Info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#920#921#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1501#1502#0" expanded="true" />
+            <element signature="e#1534#1535#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1740#1741#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1810#1811#0" expanded="true" />
+            <element signature="e#1838#1839#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1974#1975#0" expanded="true" />
+            <element signature="e#2016#2017#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2322#2323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/fenpagetable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/entity/Infotgrs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/controller/Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="102" column="34" selection-start-line="102" selection-start-column="34" selection-end-line="102" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/entity/Ptyh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/entity/Infospan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="36" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/dao/InfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/service/InfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="927">
+          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="141" column="25" lean-forward="true" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9387#9393#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ptyhinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2384">
+          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="74" column="14" lean-forward="true" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="77" column="16" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/entity/Jobjl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="95" column="25" lean-forward="true" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+          <folding>
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+            <element signature="e#1112#1113#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1427#1428#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jobinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1018">
+          <caret line="147" column="14" lean-forward="true" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
+          <folding>
+            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="301" column="17" lean-forward="true" selection-start-line="301" selection-start-column="17" selection-end-line="301" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/ptyhinfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="334" column="24" lean-forward="true" selection-start-line="334" selection-start-column="24" selection-end-line="334" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/dao/InfoDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3024">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/dao/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="114" column="106" selection-start-line="114" selection-start-column="106" selection-end-line="114" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jobcontentjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="105" column="44" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/service/imp/InfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2595#2596#0" expanded="true" />
+            <element signature="e#2627#2628#0" expanded="true" />
+            <element signature="e#2687#2688#0" expanded="true" />
+            <element signature="e#2719#2720#0" expanded="true" />
+            <element signature="e#2791#2792#0" expanded="true" />
+            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#2901#2902#0" expanded="true" />
+            <element signature="e#2939#2940#0" expanded="true" />
+            <element signature="e#3586#3587#0" expanded="true" />
+            <element signature="e#3629#3630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/service/imp/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4104">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3924#3925#0" expanded="true" />
+            <element signature="e#3963#3964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/fy/controller/InfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/gsindexjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9589">
+          <caret line="365" column="56" lean-forward="true" selection-start-line="365" selection-start-column="56" selection-end-line="365" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/gsindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="185" column="34" lean-forward="true" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/gsindexcss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jobcontent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/mycss.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="438" column="7" selection-start-line="438" selection-start-column="7" selection-end-line="438" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/jl/9b141506-3f90-40e2-9223-60ad0e2c1179.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ssm:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (renren)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|renren</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>

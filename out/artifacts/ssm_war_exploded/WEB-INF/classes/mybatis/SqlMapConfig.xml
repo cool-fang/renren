@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	
+	<!-- 通过setting配置mybatis的运行参数
+	注意，设置运行参数会影响 mybatis的运行，一定要注意！
+	-->
+<!--	<settings>-->
+<!--		&lt;!&ndash; 延迟加载的总开关 &ndash;&gt;-->
+<!--		<setting name="lazyLoadingEnabled" value="true"/>-->
+<!--		&lt;!&ndash; 设置为false实现按需求加载  &ndash;&gt;-->
+<!--		<setting name="aggressiveLazyLoading" value="false"/>-->
+<!--		&lt;!&ndash; 开启二级缓存 &ndash;&gt;-->
+<!--		<setting name="cacheEnabled" value="true"/>-->
+<!--	</settings>-->
+
+	<!-- 定义别名 -->
+	
+	<typeAliases>
+		<!-- 指定pojo所在包路径，自动扫描包下的pojo定义别名，别名为类名（首字母小写或大写都可以）
+		-->
+		<package name="com.entity"/>
+	</typeAliases>
+
+</configuration>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>普通用户界面</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/ptyhinfo.css">
+	<script src="js/jq.js"></script>
+	<script src="js/fenpagetable.js"></script>
+	<script src="js/fenpagejlflag.js"></script>
+	<script src="js/ptyhinfo.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+</head>
+<body>
+	<div class="container-fluid">
+<!--注册信息完善-->
+<div class="row">
+	<!-- 左侧功能栏 -->
+	<div class="col-md-2 left">
+		<div class="renren"><span>RenRen个人管理</span></div>
+		<div class="liebiao">
+			<a href="#" id="a1">信息填写及修改</a>
+			<a href="#" id="a2">个人收藏</a>
+			<a href="#" id="a3">投简情况</a>
+		</div>
+	</div>
+	<!-- 右侧显示信息栏 -->
+	<div class="col-md-10 right">
+		<div class="navtop">
+			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+			<span class="welcome">欢迎你，用户：<span id="username"></span></span>
+			<a href="#"><span class="glyphicon glyphicon-off" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="退出账号"></span></a>
+		</div>
+		<div id="show1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="showhidden">
+				<h2>我的信息</h2>
+				<!-- <div>用户名：<input type="text" value="嚯可乐消愁"/></div> -->
+					<div class="col-md-4">
+					  <div class="form-group">
+						<label>用户名</label>
+						<input type="text" class="form-control"  id="name" value="" placeholder="">
+					</div>
+				  <div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control"  id="email" value="" placeholder="">
+				  </div>
+
+				   <div class="form-group">
+				   					<label>联系方式</label>
+				   					<input type="email" class="form-control" id="number" value="" placeholder="">
+				   </div>
+				   <div class="checkbox">
+				           <label>
+				             <input type="radio" name="sex" value="1" > 男
+				           </label>
+
+						  <label>
+							<input type="radio" name="sex" value="2"> 女
+						  </label>
+				    </div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="form-group">
+						<label>新密码</label>
+						<input type="password" class="form-control">
+					</div>
+
+					<div class="form-group">
+						<label>验证新密码</label>
+						<input type="password" class="form-control"  id="pwd" vaule="">
+					</div>
+
+					<label>账号<span style="font-size: 12px;">(不可更改！)</span>：<span id="yh_id"></span></label>
+				</div>
+
+				<div class="col-md-4">
+					<img src="image/timg.jpg" id="show">
+					<form action="postyhimage.do" method="post" enctype="multipart/form-data">
+						<button type="button" class="btn btn-primary" id="postyhimage">上传头像</button>
+						<input type="file" name="postyhimage" onchange="selectjl(this)" id="post"/>
+						<!-- <input type="submit"  value="上传文件"/> -->
+						<button type="submit" class="btn btn-primary" id="send">提交</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="copyright"><span>@CopyRight by Fy</span></div>
+		</div>
+	</div>	
+	
+	<!-- 个人收藏页面 -->
+	<div id="show2">
+		<div id="noshoucang">
+			<!-- 展示没有收藏的背景图 -->
+		</div>
+		<table class="table table-hover">
+			<tr>
+				<th>工作岗位</th>
+				<th>公司名称</th>
+				<th>工作地点</th>
+				<th>工资待遇</th>
+				<th>操作</th>
+			</tr>
+			<tbody id="fortr">
+			<!-- 插入区域 -->
+<!--					  <tr>-->
+<!--					    <td>web前端开发</td>-->
+<!--					    <td>华为技术科技有限公司</td>-->
+<!--					    <td>东西湖区</td>-->
+<!--						<td>3k以下</td>-->
+<!--						<td>-->
+<!--							<button type="button" class="btn btn-primary btn-xs">查看详情</button>-->
+<!--							<button type="button" class="btn btn-danger btn-xs">取消收藏</button>-->
+<!--						</td>-->
+<!--					  </tr>-->
+			</tbody>
+		</table>
+		
+		<!-- 分页操作按钮 -->
+		<div id="barcon">
+		    <span id="firstPage"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;<span>首页</span></span>
+		    <span id="prePage"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span>&nbsp;<span>上一页</span></span>
+		    <span id="nextPage"><span>下一页</span>&nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></span>
+		    <span id="lastPage"><span>尾页</span>&nbsp;<span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span>
+		    <span><select id="jumpWhere"></select></span>
+		    <span id="jumpPage" onclick="jumpPage()"><span>跳转</span>&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></span>
+		</div>
+	</div>
+	
+	<!-- 投简情况页面 -->
+	<div id="show3">
+		<div id="nojianli">
+			<!-- 没有投简情况 -->
+		</div>
+		<table class="table table-hover">
+					<tr>
+						<th>#</th>
+						<th>工作岗位</th>
+						<th>公司名称</th>
+						<th>投简状态</th>
+						<th>操作</th>
+					</tr>
+					<tbody id="forjlflag">
+					<!-- 插入区域 -->
+							  <tr>
+								<td>1</td> 
+							    <td>web前端开发</td>
+							    <td>华为技术科技有限公司</td>
+							    <td>简历状态</td>
+								<td>
+									<button type="button" class="btn btn-primary btn-xs">详情</button>
+									<button type="button" class="btn btn-warning btn-xs">删除记录</button>
+								</td>
+							  </tr>
+					</tbody>
+				</table>
+				
+				<!-- 分页操作按钮 -->
+				<div id="barcon1">
+				    <span id="firstPage1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;<span>首页</span></span>
+				    <span id="prePage1"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span>&nbsp;<span>上一页</span></span>
+				    <span id="nextPage1"><span>下一页</span>&nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></span>
+				    <span id="lastPage1"><span>尾页</span>&nbsp;<span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span>
+				    <span><select id="jumpWhere1"></select></span>
+				    <span id="jumpPage1" onclick="jumpPage1()"><span>跳转</span>&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></span>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

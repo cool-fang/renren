@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>工作内容详细介绍</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/mycss.css"/>
+    <script src="js/jq.js"></script>
+    <script src="js/myjs.js"></script>
+    <script src="js/jobcontentjs.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+    body, html {
+        height: 100%;
+        margin: 0px;
+    }
+
+    #topcanva {
+        background-image: url(image/topcanva.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden
+        width: 1600px;
+        height: 150px;
+        background-color: #1B6D85;
+        padding: 15px 0px 20px 0px;
+    }
+
+    .container-fluid {
+        padding: 0 0 0 0px;
+    }
+
+    #job {
+       /* position: absolute;
+		top:100px;
+		left: 190px; */
+        color: white;
+        font-size: 28px;
+        font-weight: 600;
+        margin-right: 10px;
+    }
+
+    #pay {
+        /* position: relative;
+		top:35px;
+		left: 80px; */
+        color: #fa6a43;
+        font-size: 25px;
+        font-weight: 800;
+    }
+	#shuxing1{
+		position: relative;
+		top:10px;
+	}
+    #shuxing {
+        color: #FFFFFF;
+        position: absolute;
+        top:150px;
+        font-weight: 500;
+    }
+
+    #postjl {
+        position: absolute;
+		top:90px;
+        left: 1050px;
+        bottom: 80px;
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: 20px;
+        letter-spacing: 8px;
+        width: 296px;
+        height: 45px;
+        background-color: #fa6a43;
+        line-height: 45px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #top1 {
+        /* background-color: #c5c5c5; */
+        height: 100px;
+        line-height: 100px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    #image {
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    #ordername {
+        position: relative;
+        bottom: 10px;
+        left: 20px;
+        font-size: 23px;
+
+    }
+
+    .hr {
+        position: relative;
+        top: 20px;
+        right: 50px;
+        font-size: 15px;
+        color: #8d8d8d;
+    }
+
+    #happy {
+        position: relative;
+        top: 10px;
+        left: 800px;
+    }
+
+    #aixin {
+        color: red;
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+    .shoucang {
+        position: relative;
+        font-size: 15px;
+        bottom: 5px;
+        color: #8d8d8d;
+    }
+
+    #top2 {
+        position: relative;
+        top: 10px;
+    }
+
+    #jobcontent {
+        position: relative;
+        top: 0px;
+        width: 1140px;
+    }
+
+    .text:after {
+        content: '';
+        display: block;
+        width: 25px;
+        margin-top: 6px;
+        border-bottom: 3px solid #5acfc2;
+    }
+
+    #company {
+        position: relative;
+        width: 1140px;
+    }
+    pre{
+        box-sizing:border-box;
+        /*以下样式是自动换行代码*/
+        white-space: pre-wrap; /* css-3 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        word-wrap: break-word; /* Internet Explorer 5.5+ */
+        /*以上样式是自动换行代码，需要的加上，不需要的删除*/
+        overflow:auto;
+        font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size:13px;
+        padding:9.5px;
+        margin-top:0px;
+        margin-bottom:10px;
+        line-height:1.42857;
+        color:#000000;
+        word-break:break-all;
+        word-wrap:break-word;
+        //border:1px solid #CCCCCC;
+        border-radius:4px;
+        background-color:#FFFFFF;
+    }
+	.main{
+		min-height: 800px;
+	}
+	/* 对弹出框样式设计 */
+	#postyhjl{
+
+		margin-right: 30px;
+		/* position: relative;
+		top: 0px;
+		left: 180px; */
+	}
+	#post{
+		position: absolute;
+		top: 75px;
+		left: 214px;
+		width: 82px;
+		height: 34px;
+		opacity: 0;
+	}
+	.input3{
+		margin-left: 150px;
+	}
+	#nav3{
+		padding-top: 10px;
+		color:#fff;
+		border-radius:0;
+		height: 148px;
+	}
+</style>
+<body>
+<nav class="navbar navbar-inverse navbar-radio navbar-static-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html" id="logo">RenRen</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="jobinfo.html?span=">职位</a></li>
+					</ul>
+					<form class="navbar-form navbar-left input3">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">搜索</button>
+							</span>
+						</div>
+					</form>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li id="login"><a href="login.html">登录</a></li>
+						<li id="register"><a href="register.html">注册</a></li>
+					</ul>
+
+					<!--                       <ul class="nav navbar-nav navbar-right">-->
+					<!--                            <li id="login"><img src="image/baidu.png" id="yhimage"></li>-->
+					<!--                            <li id="register"><a href="ptyhinfo.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="点击修改个人信息" id="showusername">喝可乐消愁</a></li>-->
+					<!--            			</ul>-->
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+<!-- 中间内容部分 -->
+<div class="main">
+<div id="topcanva">
+    <div class="container">
+        <h5>招聘中...</h5>
+		<div id="shuxing1">
+        <span id="job">Web前端</span>
+        <span id="pay">10k-15k</span><br/>
+		</div>
+        <div id="shuxing">
+            <span id="place">东西湖区</span>>
+            <span id="time">经验不限</span>>
+            <span id="level">本科</span>
+        </div>
+        <div id="postjl">发送简历</div>
+		
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					</div>
+					<div class="modal-body" style="text-align:center;">
+							<h5 class="modal-title">支持DOC、DOCX、PDF、JPG、PNG格式附件<br/>
+								<span style="color:red;">文件大小不超过8M</span></h5>
+							<br><br>
+							<div>
+                                <form action="postjl.do" method="post" enctype="multipart/form-data">
+                                    <button type="button" class="btn btn-primary" id="postyhjl">选择文件</button>
+                                    <input type="file" name="postyhjl" onchange="selectjl(this)" id="post"/>
+                                    <button type="submit" class="btn btn-danger"  id="send">确定</button>
+                                </form>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+		<!-- 简历提交后继续点击提交提示框 -->
+		<div class="modal fade" id="jltijiaots">
+			<div class="modal-dialog">
+				<div class="modal-content" style="text-align: center;padding: 20px 0px 20px 0px;">
+			<h5 style="color: red ;">您当前未登录，请先登录再投简!</h5>
+				</div>
+			</div>
+		</div>
+		<!-- 查看当前用户的信息是否填写完整，否则不能投简历 -->
+		<div class="modal fade" id="grinfots">
+			<div class="modal-dialog">
+				<div class="modal-content" style="text-align: center;padding: 20px 0px 20px 0px;">
+			<h5 style="color: red ;">请先完善个人信息再投简!</h5>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+<div class="container">
+    <div id="top1">
+
+        <img src="image/timg.jpg" id="image"/>
+
+        <span id="ordername">饭老师</span>
+        <span class="hr">HR</span>
+        <span id="happy" onclick="redxin()">
+				<span class="glyphicon glyphicon-heart-empty aria-hidden='true'" id="aixin"></span><span
+                class="shoucang">感兴趣</span>
+				</span>
+    </div>
+    <div id="top2">
+        <div id="jobcontent">
+            <h5 style="font-weight: 600;" class="text">职位描述</h5>
+            <div id="jobcontent1">
+                <pre id="jobcontent2"></pre>
+            </div>
+        </div>
+        <div id="company">
+            <h5 style="font-weight: 600;" class="text">公司介绍</h5>
+            <div id="company1">
+                <pre id="company2"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 页尾部分 -->
+
+<nav class="navbar navbar-inverse navbar-radio" id="nav3">
+<div class="container">
+  <div class="row">
+    <!-- 部分：一 -->
+    <div class="col-md-2">
+      <h5>企业服务</h5>
+          <ul class="list-unstyled text-muted">
+            <li>职位搜索</li>
+            <li>新闻资讯</li>
+            <li>人人招聘APP</li>
+          </ul>
+    </div>
+    <!-- 部分：二 -->
+    <div class="col-md-2">
+      <h5>使用与帮助</h5>
+      <ul class="list-unstyled text-muted">
+        <li>用户协议与隐私政策</li>
+        <li>防骗指南</li>
+        <li>职位发布规则</li>
+        <li>使用帮助</li>
+      </ul>
+    </div>
+    <!-- 部分：三 -->
+    
+    <div class="col-md-5">
+    <h5>联系人人招聘网站</h5>
+      <ul class="list-unstyled text-muted">
+        <li>武汉工商学院</li>
+        <li>公司地址：武汉工商学院综合楼8楼</li>
+        <li>联系电话：15623156760</li>
+        <li>违法和不良信息举报邮箱 jubao@kanzhun.com</li>
+      </ul>
+    </div>
+    <!-- 部分：四  -->
+    
+    <div class="col-md-3 text-right">
+    <h4><strong>人人招聘</strong></h4>
+      <ul class="list-unstyled text-muted">
+        <li>企业服务热线和举报投诉 400 065 5799</li>
+        <li>工作日 8:00 - 22:00</li>
+        <li>休息日 9:30 - 18:30</li>
+      </ul>
+    </div>
+</div>
+    <!--copyright-->
+    <div>
+    	<p class="copyright">Copyright © 2020 人人招聘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14013441号-5&nbsp;&nbsp; 京ICP证150923号</p>
+    </div>
+</div>
+</nav>
+</body>
+<script>
+</script>
+</html>

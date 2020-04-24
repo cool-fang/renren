@@ -1,0 +1,67 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-4.3.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-4.3.xsd ">
+
+	<!-- 使用组件扫描，将@controller注解的类扫描出来在容器中进行注册
+	组件扫描可以扫描标记有@controller、@service、@repository、@component的bean进行扫描
+	 -->
+	<context:component-scan base-package="com.fy.controller"/>
+
+	
+	<!-- 注解处理器映射器 -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/> -->
+	<!-- 注解处理器适配器 -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/> -->
+	
+	<!-- 上边的注解处理器映射器和适配器配置可以使用下边mvc:annotation-driven代替 -->
+
+
+	<mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+			<bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+				<property name="supportedMediaTypes" value="application/json"/>
+				<property name="features">
+					<array>
+						<value>WriteMapNullValue</value>
+						<value>WriteDateUseDateFormat</value>
+					</array>
+				</property>
+			</bean>
+
+		</mvc:message-converters>
+
+	</mvc:annotation-driven>
+		<bean id="multipartResolver"
+			  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+			<property name="defaultEncoding" value="UTF-8"></property>
+			<property name="maxUploadSize">
+				<value>5242880</value>
+			</property>
+		</bean>
+	<mvc:default-servlet-handler />
+	<mvc:resources mapping="/view/**" location="/view/"/>
+	<mvc:resources mapping="/js/**" location="/js/"/>
+	<mvc:resources mapping="/image/**" location="/image/"/>
+	<mvc:resources mapping="/jl/**" location="/jl/"/>
+	<!-- ViewResolver视图解析器，解析jsp视图 -->
+<!--	<bean-->
+<!--		class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+<!--		&lt;!&ndash; 指定视图路径前缀 &ndash;&gt;-->
+<!--		<property name="prefix" value="/WEB-INF/jsp/" />-->
+<!--		&lt;!&ndash; 指定视图路径后缀 &ndash;&gt;-->
+<!--		<property name="suffix" value=".jsp" />-->
+<!--	</bean>-->
+
+
+</beans>

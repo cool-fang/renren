@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fy.dao.UserDao">
+    <!--普通用户登录模块-->
+    <select id="login1" parameterType="com.fy.entity.Ptyh" resultType="com.fy.entity.Ptyh">
+        select * from Ptyh where yh_id=#{yh_id} and pwd=#{pwd}
+    </select>
+
+    <!--公司用户登录模块-->
+    <select id="login2" parameterType="com.fy.entity.Gsyh" resultType="com.fy.entity.Gsyh">
+        select * from Gsyh where gs_id=#{gs_id} and pwd=#{pwd}
+    </select>
+
+    <!--普通用户注册模块-->
+    <insert id="register1" parameterType="com.fy.entity.Ptyh">
+            insert into Ptyh (id,name,yh_id,pwd)values (null,#{name},#{yh_id},#{pwd})
+    </insert>
+
+    <!--公司用户注册模块-->
+    <insert id="register2" parameterType="com.fy.entity.Gsyh">
+            insert into Gsyh (id,name,isbn,gs_id,pwd)values (null,#{name},#{isbn},#{gs_id},#{pwd})
+    </insert>
+
+    <!--普通用户注册验证模块-->
+    <select id="checkptname" parameterType="com.fy.entity.Ptyh" resultType="STRING">
+        select * from Ptyh where name=#{name}
+    </select>
+
+    <!--公司用户注册验证模块-->
+    <select id="checkgsname" parameterType="com.fy.entity.Gsyh" resultType="STRING">
+        select * from Gsyh where name=#{name}
+    </select>
+
+<!--    普通用户修改信息-->
+    <update id="updateptyhinfo" parameterType="com.fy.entity.Ptyh">
+        update Ptyh <set>
+        name=#{name} ,
+         <if test='pwd!=""'>
+         pwd=#{pwd} ,
+         </if>
+         sex=#{sex} ,number=#{number} , email=#{email},
+        </set>
+        where yh_id=#{yh_id}
+    </update>
+
+    <!--    公司用户修改信息-->
+    <update id="updategsyhinfo" parameterType="com.fy.entity.Gsyh">
+        update Gsyh <set>
+        ordername=#{ordername} ,
+        <if test='pwd!=""'>
+            pwd=#{pwd} ,
+        </if>
+        number=#{number} , email=#{email},
+    </set>
+        where gs_id=#{gs_id}
+    </update>
+
+<!--    展示用户修改后的信息-->
+    <select id="shownewuserinfo" parameterType="com.fy.entity.Ptyh" resultType="com.fy.entity.Ptyh">
+        select * from Ptyh where yh_id=#{yh_id}
+    </select>
+
+    <!--    展示公司修改后的信息-->
+    <select id="shownewgsinfo" parameterType="com.fy.entity.Gsyh" resultType="com.fy.entity.Gsyh">
+        select * from Gsyh where gs_id=#{gs_id}
+    </select>
+
+<!--    上传公司头像-->
+    <update id="changeimage" parameterType="com.fy.entity.Gsyh">
+        update Gsyh set gs_image=#{gs_image} where gs_id=#{gs_id}
+    </update>
+    
+<!--    添加要收藏的信息的id-->
+    <update id="shoucang">
+        update Ptyh set shoucang=CONCAT(shoucang,#{info_id}) where yh_id=#{yh_id}
+    </update>
+
+<!--    如果打开网页被收藏则显示红心-->
+    <select id="showshoucang"  resultType="com.fy.entity.Ptyh">
+        select * from ptyh where  find_in_set(${info_id}, shoucang) and id=#{id}
+    </select>
+
+<!--    取消收藏-->
+    <update id="hiddenaixin">
+        update ptyh set shoucang=replace(shoucang,"${info_id},","") where yh_id=#{yh_id}
+    </update>
+
+<!--    jobcontent页面显示公司相关信息返回公司对象-->
+    <select id="jobcontentshowgsname" parameterType="com.fy.entity.Gsyh" resultType="com.fy.entity.Gsyh">
+        select * from Gsyh where name=#{name}
+    </select>
+
+<!--        单纯上传用户头像路径-->
+    <update id="uploadyhimage" parameterType="com.fy.entity.Ptyh">
+        update Ptyh set yh_image=#{yh_image} where yh_id=#{yh_id}
+    </update>
+
+<!--        按钮样式显示用户是否上传了用户头像-->
+    <select id="showyhimageisnotupload" parameterType="com.fy.entity.Ptyh" resultType="String">
+        SELECT yh_image from Ptyh where yh_id=#{yh_id}
+    </select>
+
+<!--    获取用户投简情况-->
+    <select id="showjlflag" parameterType="com.fy.entity.Jobjl" resultType="com.fy.entity.Jobjl">
+        select * from Jobjl where ptyh_id=#{ptyh_id} and yhthrow =0
+</select>
+
+<!--    //    show4招聘工作岗位-->
+    <select id="findzpjoblist" parameterType="String" resultType="com.fy.entity.Jobjl">
+        select distinct info_job from Jobjl where  info_name=#{name}
+    </select>
+
+<!--    //    show4招聘通过用户-->
+    <select id="findzptgyh" parameterType="String" resultType="com.fy.entity.Jobjl">
+        select * from Jobjl where info_name=#{name} and info_job=#{info_job} and jlflag='通过' and gsthrow=0
+    </select>
+    <select id="selecttgyhbyid" parameterType="com.fy.entity.Jobjl" resultType="com.fy.entity.Ptyh">
+        select * from Ptyh where id=#{ptyh_id}
+    </select>
+
+<!--    //    用户删除记录-->
+    <update id="yhthrow" parameterType="com.fy.entity.Jobjl">
+        update Jobjl set yhthrow=1 where id=#{id}
+    </update>
+
+</mapper>
+

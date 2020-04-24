@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>人人招聘</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/mycss.css">
+		<script src="js/jq.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/myjs.js"></script>
+	</head>
+
+
+	<body>
+		<nav class="navbar navbar-inverse navbar-radio navbar-static-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html" id="logo">RenRen</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="jobinfo.html?span=">职位</a></li>
+					</ul>
+					<!-- <form class="navbar-form navbar-left">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">搜索</button>
+							</span>
+						</div>
+					</form> -->
+
+					<ul class="nav navbar-nav navbar-right">
+						<li id="login"><a href="login.html">登录</a></li>
+						<li id="register"><a href="register.html">注册</a></li>
+					</ul>
+
+					<!--                       <ul class="nav navbar-nav navbar-right">-->
+					<!--                            <li id="login"><img src="image/baidu.png" id="yhimage"></li>-->
+					<!--                            <li id="register"><a href="ptyhinfo.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="点击修改个人信息" id="showusername">喝可乐消愁</a></li>-->
+					<!--            			</ul>-->
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+<!-- 搜索框 -->
+<div class="container-fluid">
+			<div class="row">
+				<div class="canvainput">
+					<input type="text" placeholder="搜索职位~~" />
+					<span>Go</span>
+				</div>
+			</div>
+</div>
+		<!-- 滚动窗口 -->
+		<!-- Wrapper for slides -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4" id="showjoblist">
+					<ul id="a">
+
+						<li class="li0">
+							<h4>技术</h4><span>Java</span><span>PHP</span><span>Web前端</span><span>算法工程师</span>
+							<div>></div>
+						</li>
+
+						<li class="li1">
+							<h4>产品</h4><span>产品经理</span><span>产品总监</span><span>数据产品经理</span>
+							<div>></div>
+						</li>
+
+						<li class="li2">
+							<h4>设计</h4><span>UI设计师</span><span>平面设计师</span><span>交互设计师</span>
+							<div>></div>
+						</li>
+
+						<li class="li3">
+							<h4>运营</h4><span>新媒体运营</span><span>产品运营</span><span>网络推广</span>
+							<div>></div>
+						</li>
+
+						<li class="li4">
+							<h4>市场</h4><span>市场运营</span><span>市场推广</span><span>品牌公关</span><span>策划经理</span>
+							<div>></div>
+						</li>
+
+						<li class="li5">
+							<h4>人事</h4><span>人事/HR</span><span>行政</span><span>财务</span><span>培训</span><span>绩效考核</span>
+							<div>></div>
+						</li>
+
+						<li class="li6">
+							<h4>高级管理</h4><span>总裁/总经理/CEO</span><span>分公司/代表处负责人</span>
+							<div>></div>
+						</li>
+
+
+					</ul>
+					<div id="showalljob">显示全部职位</div>
+					<div id="alljob">
+						<ul id="b">
+							<li class="li7">
+								<h4>销售</h4><span>销售专员/CEO</span><span>销售经理</span><span>销售工程师</span>
+								<div>></div>
+							</li>
+
+
+							<li class="li8">
+								<h4>媒体</h4><span>文案</span><span>广告创意</span><span>编辑</span><span>记者</span><span>媒介经理</span>
+								<div>></div>
+							</li>
+
+							<li class="li9">
+								<h4>金融</h4><span>投资经理</span><span>投资总监</span><span>风控</span><span>证券</span>
+								<div>></div>
+							</li>
+
+							<li class="li10">
+								<h4>教育培训</h4><span>课程设计</span><span>教务管理</span><span>IT培训</span>
+								<div>></div>
+							</li>
+
+							<li class="li11">
+								<h4>医疗健康</h4><span>药剂师</span><span>营养师</span><span>医疗器械研究</span>
+								<div>></div>
+							</li>
+
+							<li class="li12">
+								<h4>采购贸易</h4><span>采购经理</span><span>采购主管</span><span>进出口贸易</span>
+								<div>></div>
+							</li>
+
+							<li class="li13">
+								<h4>供应链/物流</h4><span>物流专员</span><span>贸易跟单</span><span>供应链经理</span>
+								<div>></div>
+							</li>
+
+							<!-- <li class="li14">
+								<h4>房地产/建筑</h4><span>物业管理</span><span>房地产规划开发</span>
+								<div>></div>
+							</li> -->
+
+							<!-- <li class="li15">
+								<h4>咨询/翻译/法律</h4><span>企业管理咨询</span><span>事务所律师</span>
+								<div>></div>
+							</li> -->
+
+							<li class="li14">
+								<h4>旅游</h4><span>旅游顾问</span><span>导游</span><span>旅游产品开发/策划</span>
+								<div>></div>
+							</li>
+
+							<li class="li15">
+								<h4>服务业</h4><span>酒店前台</span><span>客房服务员</span><span>发型师</span>
+								<div>></div>
+							</li>
+
+							<li class="li16">
+								<h4>生产制造</h4><span>生产总监</span><span>安全员</span>
+								<div>></div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+
+
+				<!-- 悬浮显示div层 -->
+				<div id="divli">
+				<div id="divli0">
+					<h4>技术</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">后端开发</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>后端开发</span><span>Java</span><span>C++</span><span>PHP</span>
+										<span>数据挖掘</span><span>C</span><span>C#</span><span>.NET</span>
+										<span>Hadoop</span><span>Python</span><span>Delphi</span><span>VB</span>
+										<span>Perl</span><span>Ruby</span><span>Node.js</span><span>搜索算法</span>
+										<span>Golang</span><span>推荐算法</span><span>Erlang</span><span>算法工程师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">移动开发</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>UE4</span><span>移动开发</span><span>Android</span>
+										<span>iOS</span><span>WP</span><span>移动web前端</span>
+										<span>U3D</span><span>COCOS2DX</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">测试</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>性能测试</span><span>测试工程师</span><span>自动化测试</span><span>功能测试</span>
+										<span>测试开发</span><span>移动端测试</span><span>游戏测试</span><span>硬件测试</span>
+										<span>软件测试</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">运维/技术支持</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>运维工程师</span><span>运维开发工程师</span><span>网络工程师</span><span>系统工程师</span>
+										<span>IT技术支持</span><span>系统管理员</span><span>网络安全</span><span>系统安全</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">数据</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>数据挖掘</span><span>数据分析师</span><span>ETL工程师</span><span>数据仓库</span>
+										<span>数据开发</span><span>数据架构师</span><span>算法研究员</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">项目管理</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>项目经理</span><span>项目主管</span><span>项目助理</span><span>项目专员</span>
+										<span>实施顾问</span><span>实施工程师</span><span>需求分析工程师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">硬件开发</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>硬件</span><span>嵌入式</span><span>自动化</span><span>单片机</span>
+										<span>电路设计</span><span>驱动开发</span><span>系统集成</span>
+										
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">前端开发</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>前端开发</span><span>web前端</span><span>JavaScript</span><span>Flash开发</span>
+										<span>HTML5</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<!-- <li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">通信</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>通信技术工程师</span><span>通信研发工程师</span><span>数据通信工程师</span><span>移动通信工程师</span>
+										<span>电信网络工程师</span><span>电信交换工程师</span><span>无线射频工程师</span>
+										<span>通信项目专员</span><span>通信项目经理</span>
+										<span>通信测试工程师</span><span>通信设备工程师</span>
+										
+									</div>
+								</div>
+							</div>
+						</li> -->
+
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">高端技术职位</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>高端技术职位</span><span>技术经理</span><span>技术总监</span><span>测试经理</span>
+										<span>架构师</span><span>运维总监</span><span>CTO</span><span>运维总监</span>
+										<span>技术合伙人</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">人工智能</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>智能驾驶系统工程师</span><span>反欺诈/风控算法</span><span>人工智能</span><span>自然语言处理</span>
+										<span>机器学习</span><span>深度学习</span><span>语音识别</span><span>图像识别</span>
+										<span>算法研究员</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+					</div>	
+				
+				<div id="divli1">
+					<h4>产品</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">产品经理</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>硬件产品经理</span><span>产品经理</span><span>产品经理</span><span>移动产品经理</span>
+										<span>产品助理</span><span>数据产品经理</span><span>电商产品经理</span><span>游戏策划</span>
+										<span>产品专员</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">高端产品职位</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>产品总监</span><span>游戏制作人</span><span>产品VP</span>
+									</div>
+								</div>
+							</div>
+						</li>			
+					</ul>
+				</div>
+				
+				<div id="divli2">
+					<h4>设计</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">视觉设计</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>视觉设计</span><span>视觉设计师</span><span>网页设计师</span><span>Flash设计师</span>
+										<span>APP设计师</span><span>UI设计师</span><span>平面设计师</span><span>美术设计师（2D/3D）</span>
+										<span>广告设计师</span><span>多媒体设计师</span><span>原画师</span><span>游戏特效</span>
+										<span>游戏界面设计师</span><span>游戏场景</span><span>游戏角色</span><span>游戏动作</span>
+										<span>美工</span><span>三维/CAD/制图</span><span>包装设计</span><span>设计师助理</span>
+										<span>动画设计师</span><span>插画师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">交互设计</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>交互设计师</span><span>无线交互设计师</span><span>网页交互设计师</span><span>Flash硬件交互设计师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">用户研究</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>数据分析师</span><span>用户研究员</span><span>游戏数值策划</span><span>UX设计师</span>
+										<span>用户研究经理</span><span>用户研究总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">高端设计职位</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>高端设计职位</span><span>设计经理/主管</span><span>设计总监</span><span>视觉设计经理</span>
+										<span>交互设计经理/主管</span><span>交互设计总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">非视觉设计</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>非视觉设计</span><span>服装/纺织设计</span><span>工业设计</span><span>橱柜设计</span>
+										<span>家具设计</span><span>室内设计</span><span>珠宝设计</span><span>陈列设计</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div id="divli3">
+					<h4>运营</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">运营</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>数据标注</span><span>直播运营</span><span>用户运营</span><span>产品运营</span>
+										<span>数据运营</span><span>内容运营</span><span>活动运营</span><span>商家运营</span>
+										<span>品类运营</span><span>游戏运营</span><span>微信运营</span><span>微博运营</span>
+										<span>新媒体运营</span><span>社区运营</span><span>策略运营</span><span>线下拓展运营</span>
+										<span>电商运营</span><span>运营助理/专员</span><span>内容审核</span><span>销售运营</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">编辑</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>副主编</span><span>内容编辑</span><span>文案策划</span><span>网站编辑</span>
+										<span>记者</span><span>采编</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">客服</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>售前咨询</span><span>售后咨询</span><span>网络客服</span><span>客服经理</span>
+										<span>客服专员/助理</span><span>客服主管</span><span>客服总监</span><span>电话客服</span>
+										<span>咨询热线/呼叫中心客服</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">高端运营职位</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>主编</span><span>运营总监</span><span>COO</span><span>客服总监</span>
+										<span>运营经理/主管</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				
+				<div id="divli4">
+					<h4>市场</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">政府事务</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>政策研究</span><span>企业党建</span><span>政府关系</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">市场/营销</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>选址开发</span><span>市场营销</span><span>市场策划</span>
+										<span>市场顾问</span><span>市场推广</span><span>SEO</span>
+										<span>SEM</span><span>商务渠道</span><span>商业数据分析</span>
+										<span>活动策划</span><span>网络营销</span><span>海外市场</span>
+										<span>APP推广</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">广告</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>广告</span><span>广告创意</span><span>美术指导</span>
+										<span>广告设计师</span><span>策划经理</span><span>文案</span>
+										<span>广告制作</span><span>媒介投放</span><span>媒介合作</span>
+										<span>媒介顾问</span><span>广告审核</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">高端市场职位</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>市场总监</span><span>CMO</span><span>公关总监</span>
+										<span>媒介总监</span><span>创意总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+					
+				</div>
+				
+				<div id="divli5">
+					<h4>人事</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">人力资源</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>人力资源主管</span><span>人力资源专员/助理</span><span>人力资源经理</span>
+										<span>人力资源总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">行政</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>行政专员/助理</span><span>前台</span><span>行政主管</span>
+										<span>经理助理</span><span>后勤</span><span>商务司机</span>
+										<span>行政经理</span><span>行政总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">财务</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>会计</span><span>出纳</span><span>财务顾问</span>
+										<span>风控</span><span>财务经理</span><span>CFO</span>
+										<span>财务总监</span><span>财务主管</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">法务</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>法务专员/助理</span><span>律师</span><span>法律顾问</span>
+										<span>法务主管</span><span>法务经理</span><span>法务总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>	
+				</div>
+				
+				<div id="divli6">
+					<h4>高级管理职位</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">人力资源</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>总裁/总经理/CEO</span><span>副总裁/副总经理/VP</span><span>分公司/代表处负责人</span>
+										<span>区域负责人</span><span>总助/CEO助理/董事长助理</span><span>合伙人</span>
+										<span>联合创始人</span><span>董事会秘书</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						
+					</ul>
+				</div>
+				
+				<div id="divli7">
+					<h4>销售</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">销售</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>销售专员</span><span>销售经理</span><span>客户代表</span>
+										<span>大客户代表</span><span>代理商销售</span><span>电话销售</span>
+										<span>销售助理</span><span>商品经理</span><span>广告销售</span>
+										<span>网络营销</span><span>营销主管</span><span>客户经理</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">销售管理</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>销售总监</span><span>商务总监</span><span>区域总监</span>
+										<span>城市经理</span><span>销售VP</span><span>团队经理</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+					
+				<div id="divli8">
+					<h4>媒体</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">采编/写作/出版</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>记者</span><span>编辑</span><span>采编</span>
+										<span>撰稿人</span><span>总编</span><span>自媒体</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">广告</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>广告创意</span><span>美术指导</span><span>广告设计师</span>
+										<span>策划经理</span><span>文案</span><span>广告制作</span>
+										<span>广告审核</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">影视媒体</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>广告创意</span><span>美术指导</span><span>广告设计师</span>
+										<span>策划经理</span><span>文案</span><span>广告制作</span>
+										<span>广告审核</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">公关媒介</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>公关媒介</span><span>媒介经理</span><span>媒介专员</span>
+										<span>广告协调</span><span>品牌公关</span><span>活动策划执行</span>
+										<span>媒介策划</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>	
+				
+				<div id="divli9">
+					<h4>金融</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">投融资</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>投资经理</span><span>资产管理</span><span>投资总监</span>
+										<span>投资顾问</span><span>投后管理</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">风控</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>风控</span><span>律师</span><span>资信评估</span>
+										<span>合规稽查</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">银行</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>信用卡销售</span><span>分析师</span><span>柜员</span>
+										<span>大堂经理</span><span>理财顾问</span><span>客户经理</span>
+										<span>信贷管理</span><span>风控</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">证券</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>证券经纪人</span><span>证券分析师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli10">
+					<h4>教育培训</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">教育产品研发</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>课程设计</span><span>课程编辑</span><span>教师</span>
+										<span>培训师</span><span>培训策划</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">教师</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>日语教师</span><span>教师</span><span>助教</span>
+										<span>高中教师</span><span>初中教师</span><span>小学教师</span>
+										<span>幼教</span><span>理科教师</span><span>文科教师</span>
+										<span>英语教师</span><span>音乐教师</span><span>美术教师</span>
+										<span>体育教师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">教练</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>武术教练</span><span>轮滑教练</span><span>教练</span>
+										<span>舞蹈教练</span><span>瑜伽教练</span><span>瘦身顾问</span>
+										<span>游泳教练</span><span>健身教练</span><span>篮球/羽毛球教练</span>
+										<span>跆拳道教练</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli11">
+					<h4>医疗健康</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">临床试验</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>临床研究</span><span>临床协调</span><span>临床数据分析</span>
+										<span>医学总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">医生/医技</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>医生助理</span><span>B超医生</span><span>中医</span>
+										<span>心理医生</span><span>B药剂师</span>
+										<span>牙科医生</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">护士/护理</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>护士长</span><span>护士</span><span>导医</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli12">
+					<h4>采购贸易</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">采购</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>采购</span><span>采购总监</span><span>采购经理</span>
+										<span>采购专员</span><span>采购工程师</span><span>采购主管</span>
+										<span>采购主管</span><span>采购助理</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">进出口贸易</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>进出口贸易</span><span>外贸经理</span><span>外贸专员</span>
+										<span>外贸业务员</span><span>贸易跟单</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli13">
+					<h4>供应链/物流</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">物流</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>供应链专员</span><span>物流</span><span>供应链专员</span>
+										<span>供应链经理</span><span>物流专员</span><span>物流经理</span>
+										<span>运输经理/主管</span><span>货运代理专员</span><span>货运代理经理</span>
+										<span>报关员</span><span>报检员</span><span>核销员</span><span>单证员</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">仓储</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>仓储</span><span>仓储物料经理</span><span>仓储物料专员</span>
+										<span>仓库文员</span><span>配/理/拣/发货</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">运输</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>运输</span><span>货运司机</span><span>配送</span>
+										<span>快递</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">高端供应链职位</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>高端供应链职位</span><span>供应链总监</span><span>物流总监</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli14">
+					<h4>旅游</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">旅游服务</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>旅游顾问</span><span>导游</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">旅游产品开发/策划</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>旅游产品开发/策划</span><span>旅游产品经理</span><span>旅游策划师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli15">
+					<h4>服务业</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-3">安保/家政/维修</h5>
+									<div class="col-md-9" id="jobspan">
+										<span>保安</span><span>保洁</span><span>保姆</span>
+										<span>月嫂</span><span>育婴师</span><span>护工</span>
+										<span>安检员</span><span>手机维修</span><span>家电维修</span>
+										<span>保安经理</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">美容保健</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>彩妆顾问</span><span>纹绣师</span><span>美体师</span>
+										<span>美发学徒</span><span>美容店长</span><span>足疗师</span>
+										<span>按摩师</span><span>发型师</span><span>美甲师</span>
+										<span>化妆师</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">酒店</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>礼仪迎宾</span><span>前厅经理</span><span>客房经理</span>
+										<span>收银</span><span>酒店前台</span><span>客房服务员</span>
+										<span>酒店经理</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">餐饮</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>后厨</span><span>茶艺师</span><span>西点师</span>
+										<span>餐饮学徒</span><span>面点师</span><span>厨师长</span>
+										<span>传菜员</span><span>洗碗工</span><span>中餐厨师</span>
+										<span>西餐厨师</span><span>日式厨师</span><span>厨师</span>
+										<span>咖啡师</span><span>领班</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<div id="divli16">
+					<h4>生产制造</h4><br>
+					<ul>
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">生产营运</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>生产总监</span><span>厂长/工厂经理</span><span>生产经理/车间主任</span>
+										<span>生产员</span><span>生产设备管理</span><span>生产跟单</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li>
+							<div class="container-fluid">
+								<div class="row">
+									<h5 class="col-md-2">质量安全</h5>
+									<div class="col-md-9 col-lg-offset-1" id="jobspan">
+										<span>质检员</span><span>故障分析师</span><span>体系工程师</span>
+										<span>审核员</span><span>安全员</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				</div>
+
+				<div class="col-md-8">
+					<div id="carousel">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="image/adver1.png">
+								</div>
+								<div class="item">
+									<img src="image/adver3.png">
+									
+								</div>
+								<div class="item">
+									<img src="image/adver2.png">
+									
+								</div>
+								<div class="item">
+									<img src="image/adver4.png">
+									
+								</div>
+
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="hostjob">
+						<span class="title"><span class="s">——</span>热招职位<span class="s">——</span></span>
+						<div class="hotjoblist">
+								<ul>
+									<li>IT.互联网</li>
+									<li>金融</li>
+									<li>房地产.建筑</li>
+									<li>教育培训</li>
+									<li>娱乐传媒</li>
+									<li>医疗健康</li>
+									<li>法律咨询</li>
+									<li>供应链.物流</li>
+									<li>采购贸易</li>
+								</ul>
+						</div>
+						<div class="showjobview">
+							
+									<ul class="jobviewdiv">
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">高级产品经理</span>
+												<span id="adrspan">东西湖区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">10年以上</span><br/>
+												<span id="levelspan">初中及以下</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">20k以上</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">你好</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">你好</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">你好</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">你好</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">你好</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">你好</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">我是第八个</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+										<li>
+											<div>
+												<img src="image/timg.jpg" />
+												<span id="workspan">我是第九个</span>
+												<span id="adrspan">新洲区</span>
+												<span class="shuxian">|</span>
+												<span id="timespan">1年以内</span>
+												<span id="levelspan">大专</span>
+												<span class="yuandian">.</span>
+												<span id="payspan">15k-20k</span>
+											</div>
+										</li>
+									</ul>
+						</div>
+						<div class="morejob">
+							查看更多
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+		<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+		<!-- 网站底部版权信息 -->
+		<nav class="navbar navbar-inverse navbar-radio" id="nav2">
+		    <div class="container">
+		        <div class="row">
+		            <!-- 部分：一 -->
+		            <div class="col-md-2">
+		                <h5>企业服务</h5>
+		                <ul class="list-unstyled text-muted">
+		                    <li>职位搜索</li>
+		                    <li>新闻资讯</li>
+		                    <li>人人招聘APP</li>
+		                </ul>
+		            </div>
+		            <!-- 部分：二 -->
+		            <div class="col-md-2">
+		                <h5>使用与帮助</h5>
+		                <ul class="list-unstyled text-muted">
+		                    <li>用户协议与隐私政策</li>
+		                    <li>防骗指南</li>
+		                    <li>职位发布规则</li>
+		                    <li>使用帮助</li>
+		                </ul>
+		            </div>
+		            <!-- 部分：三 -->
+
+		            <div class="col-md-5">
+		                <h5>联系人人招聘网站</h5>
+		                <ul class="list-unstyled text-muted">
+		                    <li>武汉工商学院</li>
+		                    <li>公司地址：武汉工商学院综合楼8楼</li>
+		                    <li>联系电话：15623156760</li>
+		                    <li>违法和不良信息举报邮箱 jubao@kanzhun.com</li>
+		                </ul>
+		            </div>
+		            <!-- 部分：四  -->
+
+		            <div class="col-md-3 text-right">
+		                <h4><strong>人人招聘</strong></h4>
+		                <ul class="list-unstyled text-muted">
+		                    <li>企业服务热线和举报投诉 400 065 5799</li>
+		                    <li>工作日 8:00 - 22:00</li>
+		                    <li>休息日 9:30 - 18:30</li>
+		                </ul>
+		            </div>
+		        </div>
+		        <!--copyright-->
+		        <div>
+		            <p class="copyright">Copyright © 2020 人人招聘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14013441号-5&nbsp;&nbsp;
+		                京ICP证150923号</p>
+		        </div>
+		    </div>
+		</nav>
+
+
+	</body>
+</html>

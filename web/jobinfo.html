@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>人人招聘</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <script src="js/jq.js"></script>
+    <script src="js/fenpage.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-radio navbar-static-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html" id="logo">RenRen</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">主页</a></li>
+						<li><a href="jobinfo.html?span=">职位</a></li>
+					</ul>
+					<!-- <form class="navbar-form navbar-left">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search for...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">搜索</button>
+							</span>
+						</div>
+					</form> -->
+
+					<ul class="nav navbar-nav navbar-right">
+						<li id="login"><a href="login.html">登录</a></li>
+						<li id="register"><a href="register.html">注册</a></li>
+					</ul>
+
+					<!--                       <ul class="nav navbar-nav navbar-right">-->
+					<!--                            <li id="login"><img src="image/baidu.png" id="yhimage"></li>-->
+					<!--                            <li id="register"><a href="ptyhinfo.html" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="点击修改个人信息" id="showusername">喝可乐消愁</a></li>-->
+					<!--            			</ul>-->
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+
+<!-- 条件查询列 -->
+<div id="tiaojianview">
+	<div id="selector">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="input2">
+					<input type="text" placeholder="搜索职位~~" />
+					<span>搜索</span>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+		
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								   aria-expanded="false"><span id="address">选择地区</span> <span class="caret"></span></a>
+								<ul class="dropdown-menu" id="ress">
+									<li><a onmouseover="adr()">不限地区</a></li>
+									<li><a onmouseover="adr()">武昌区</a></li>
+									<li><a onmouseover="adr()">江岸区</a></li>
+									<li><a onmouseover="adr()">江汉区</a></li>
+									<li><a onmouseover="adr()">洪山区</a></li>
+									<li><a onmouseover="adr()">新洲区</a></li>
+									<li><a onmouseover="adr()">青山区</a></li>
+									<li><a onmouseover="adr()">蔡甸区</a></li>
+									<li><a onmouseover="adr()">东西湖区</a></li>
+								</ul>
+							</li>
+							
+							<li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false"><span id="paywant">薪资要求</span> <span class="caret"></span></a>
+                                <ul class="dropdown-menu" id="want">
+                                    <li><a onmouseover="pay()">不限薪资</a></li>
+                                    <li><a onmouseover="pay()">3k以下</a></li>
+                                    <li><a onmouseover="pay()">3k-5k</a></li>
+                                    <li><a onmouseover="pay()">5k-10k</a></li>
+                                    <li><a onmouseover="pay()">10k-15k</a></li>
+                                    <li><a onmouseover="pay()">15k-20k</a></li>
+                                    <li><a onmouseover="pay()">20k以上</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false"><span id="worktime">工作经验</span> <span class="caret"></span></a>
+                                <ul class="dropdown-menu" id="time">
+                                    <li><a onmouseover="work()">不限经验</a></li>
+                                    <li><a onmouseover="work()">在校生</a></li>
+                                    <li><a onmouseover="work()">应届生</a></li>
+                                    <li><a onmouseover="work()">1年以内</a></li>
+                                    <li><a onmouseover="work()">1-3年</a></li>
+                                    <li><a onmouseover="work()">3-5年</a></li>
+                                    <li><a onmouseover="work()">5-10年</a></li>
+                                    <li><a onmouseover="work()">10年以上</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false"><span id="studylevel">学历要求</span> <span class="caret"></span></a>
+                                <ul class="dropdown-menu" id="level">
+                                    <li><a onmouseover="stu()">不限学历</a></li>
+                                    <li><a onmouseover="stu()">初中及以下</a></li>
+                                    <li><a onmouseover="stu()">中专/中技</a></li>
+                                    <li><a onmouseover="stu()">高中</a></li>
+                                    <li><a onmouseover="stu()">大专</a></li>
+                                    <li><a onmouseover="stu()">本科</a></li>
+                                    <li><a onmouseover="stu()">硕士</a></li>
+                                    <li><a onmouseover="stu()">博士</a></li>
+                                </ul>
+                            </li>
+						</ul>
+						 <span id="clear" onclick="clearall()">清空筛选条件</span>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <!-- 招聘信息列表 -->
+	<div class="container">
+    <div class="row" id="row1">
+        <ul class="col-md-9" id="infoview">
+            			<li class="infoli">
+            			<div class="info">
+            			<div class="info1">
+            			<span class="job">data[i].job</span><span class="didian">[ data[i].place] </span>
+            			<span class="company"> data[i].name</span>-->
+            			<div class="tupian"><img src="image/baidu.png"></div>
+            			</div>
+            			<div class="info2">
+            			<span class="gongzi">data[i].pay</span><span class="jingyan">data[i].time</span>|<span class="xueli"> data[i].level</span>
+            			</div>
+            			</div>
+            			</li>					
+        </ul>
+		</div>
+    </div>
+ </div>
+        <div id="barcon">
+            <span id="firstPage"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;<span>首页</span></span>
+            <span id="prePage"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span>&nbsp;<span>上一页</span></span>
+            <span id="nextPage"><span>下一页</span>&nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></span>
+            <span id="lastPage"><span>尾页</span>&nbsp;<span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span>
+            <span><select id="jumpWhere"></select></span>
+            <span id="jumpPage" onclick="jumpPage()"><span>跳转</span>&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></span>
+        </div>
+
+
+        <!-- 右侧条件广告区域-->
+        <!--		<div class="col-md-3 col-md-offset-8">-->
+        <!--			-->
+        <!--		</div>-->
+
+       
+
+
+
+<!-- 网站底部版权信息-->
+<nav class="navbar navbar-inverse navbar-radio" id="nav1">
+    <div class="container">
+        <div class="row">
+            <!-- 部分-->
+            <div class="col-md-2">
+                <h5>企业服务</h5>
+                <ul class="list-unstyled text-muted">
+                    <li>职位搜索</li>
+                    <li>新闻资讯</li>
+                    <li>人人招聘APP</li>
+                </ul>
+            </div>
+            <!-- 部分：二 -->
+            <div class="col-md-2">
+                <h5>使用与帮助</h5>
+                <ul class="list-unstyled text-muted">
+                    <li>用户协议与隐私政策</li>
+                    <li>防骗指南</li>
+                    <li>职位发布规则</li>
+                    <li>使用帮助</li>
+                </ul>
+            </div>
+            <!-- 部分：三 -->
+
+            <div class="col-md-5">
+                <h5>联系人人招聘网站</h5>
+                <ul class="list-unstyled text-muted">
+                    <li>武汉工商学院</li>
+                    <li>公司地址：武汉工商学院综合楼8楼</li>
+                    <li>联系电话：15623156760</li>
+                    <li>违法和不良信息举报邮箱 jubao@kanzhun.com</li>
+                </ul>
+            </div>
+            <!-- 部分：四  -->
+
+            <div class="col-md-3 text-right">
+                <h4><strong>人人招聘</strong></h4>
+                <ul class="list-unstyled text-muted">
+                    <li>企业服务热线和举报投诉 400 065 5799</li>
+                    <li>工作日 8:00 - 22:00</li>
+                    <li>休息日 9:30 - 18:30</li>
+                </ul>
+            </div>
+        </div>
+        <!--copyright-->
+        <div>
+            <p class="copyright">Copyright © 2020 人人招聘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14013441号-5&nbsp;&nbsp;
+                京ICP证150923号</p>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
+
+
+
+

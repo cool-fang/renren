@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司主页面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gsindexcss.css"/>
+    <script src="js/jq.js"></script>
+    <script src="js/fenpage.js"></script>
+    <script src="js/fenpagejlflag.js"></script>
+    <script src="js/gsindexjs.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="modal fade" id="postmessage">
+	<div class="modal-dialog" style="width: 400px;">
+		<div class="modal-content" style="text-align: center;padding: 20px 0px 20px 0px;">
+			<h5 style="color: #ff4146 ;font-weight: 800;font-size: 20px;">请先完善招聘信息再发布!</h5>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="successpost">
+	<div class="modal-dialog" style="width: 400px;">
+		<div class="modal-content" style="text-align: center;padding: 20px 0px 20px 0px;">
+			<h5 style="color: #03ff62 ;font-weight: 800;font-size: 20px;">发布成功!</h5>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+    <!--注册信息完善-->
+    <div class="row">
+        <!-- 左侧功能栏 -->
+        <div class="col-md-2 left">
+            <div class="renren"><span>RenRen公司管理</span></div>
+            <div class="liebiao">
+                <a href="#" id="a1">完善公司信息</a>
+                <a href="#" id="a2">发布招聘信息</a>
+                <a href="#" id="a3">查看简历</a>
+                <a href="#" id="a4">查看入选人员信息</a>
+                <a href="#" id="a5">编辑发布的信息</a>
+            </div>
+        </div>
+        <!-- 右侧显示信息栏 -->
+        <div class="col-md-10 right">
+            <div class="navtop">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <span class="welcome">欢迎你，公司：<span id="username"></span></span>
+			<a href="#"><span class="glyphicon glyphicon-off" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="bottom" data-content="退出账号"></span></a>
+            </div>
+            <div id="show1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="showhidden">
+                            <h2>公司信息</h2>
+                            <!-- <div>用户名：<input type="text" value="嚯可乐消愁"/></div> -->
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>负责人</label>
+                                    <input type="text" class="form-control" id="ordername" value="方主管">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="email" value="公司邮箱未填写，请在此输入！">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>联系方式</label>
+                                    <input type="email" class="form-control" value="未填写HR联系方式，请在此输入！" id="number">
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>新密码</label>
+                                    <input type="password" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>验证新密码</label>
+                                    <input type="password" class="form-control" id="pwd" vaule="">
+                                </div>
+
+                                <label>公司平台账号<span style="font-size: 12px;">(不可更改！)</span>：<span
+                                        id="gs_id">66666666</span></label>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div id="gs_image"><img src="image/timg.jpg" id="show"></div>
+                                <form action="upload.do" method="post" enctype="multipart/form-data">
+                                    <button id="aaa" class="btn btn-primary">选择文件</button>
+                                    <input type="file" name="fileUpload" onchange="selectimg(this)" id="img"/>
+                                    <!-- <input type="submit"  value="上传文件"/> -->
+                                    <button type="submit" class="btn btn-primary" id="send">提交</button>
+                                </form>
+
+
+                                <!-- <div id="gs_image"><img src="image/timg.jpg"></div>
+                                <button type="button" class="btn btn-primary" id="uploadimg">上传头像</button>-->
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="copyright"><span>@CopyRight by Fy</span></div>
+                </div>
+            </div>
+
+            <!-- show2 -->
+            <div id="show2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="showhidden">
+                            <div class="col-md-3">
+                                <h2>招聘信息编辑</h2>
+                                <!-- <div>用户名：<input type="text" value="嚯可乐消愁"/></div> -->
+
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false"><span id="address">选择地区</span>
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="ress">
+                                            <li><a onmouseover="adr1()">不限地区</a></li>
+                                            <li><a onmouseover="adr1()">武昌区</a></li>
+                                            <li><a onmouseover="adr1()">江岸区</a></li>
+                                            <li><a onmouseover="adr1()">江汉区</a></li>
+                                            <li><a onmouseover="adr1()">洪山区</a></li>
+                                            <li><a onmouseover="adr1()">新洲区</a></li>
+                                            <li><a onmouseover="adr1()">青山区</a></li>
+                                            <li><a onmouseover="adr1()">蔡甸区</a></li>
+                                            <li><a onmouseover="adr1()">东西湖区</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false"><span id="paywant">薪资要求</span>
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="want">
+                                            <li><a onmouseover="pay1()">不限薪资</a></li>
+                                            <li><a onmouseover="pay1()">3k以下</a></li>
+                                            <li><a onmouseover="pay1()">3k-5k</a></li>
+                                            <li><a onmouseover="pay1()">5k-10k</a></li>
+                                            <li><a onmouseover="pay1()">10k-15k</a></li>
+                                            <li><a onmouseover="pay1()">15k-20k</a></li>
+                                            <li><a onmouseover="pay1()">20k以上</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false"><span id="worktime">工作经验</span>
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="time">
+                                            <li><a onmouseover="work1()">不限经验</a></li>
+                                            <li><a onmouseover="work1()">在校生</a></li>
+                                            <li><a onmouseover="work1()">应届生</a></li>
+                                            <li><a onmouseover="work1()">1年以内</a></li>
+                                            <li><a onmouseover="work1()">1-3年</a></li>
+                                            <li><a onmouseover="work1()">3-5年</a></li>
+                                            <li><a onmouseover="work1()">5-10年</a></li>
+                                            <li><a onmouseover="work1()">10年以上</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                           aria-haspopup="true" aria-expanded="false"><span id="studylevel">学历要求</span>
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="level">
+                                            <li><a onmouseover="stu1()">不限学历</a></li>
+                                            <li><a onmouseover="stu1()">初中及以下</a></li>
+                                            <li><a onmouseover="stu1()">中专/中技</a></li>
+                                            <li><a onmouseover="stu1()">高中</a></li>
+                                            <li><a onmouseover="stu1()">大专</a></li>
+                                            <li><a onmouseover="stu1()">本科</a></li>
+                                            <li><a onmouseover="stu1()">硕士</a></li>
+                                            <li><a onmouseover="stu1()">博士</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-primary btn-lg" id="postinfo2" onclick="postinfo()">
+                                    发布
+                                </button>
+                            </div>
+                            <div class="col-md-9">
+								<div class="container-fluid" style="padding:0 0 0 0px;">
+									<div class="row">
+										<div class="col-md-4" style="padding:0 0 0 0px;">
+											<div class="form-group">
+											    <label>工作岗位</label>
+											    <input type="text" class="form-control" id="job1">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+											    <label>工作标签一</label>
+											    <input type="text" class="form-control" id="span1">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+											    <label>工作标签二</label>
+											    <input type="text" class="form-control" id="span2">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+											    <label>工作标签三</label>
+											    <input type="text" class="form-control" id="span3">
+											</div>
+										</div>
+										<div class="col-md-2">
+											<div class="form-group">
+											    <label>工作标签四</label>
+											    <input type="text" class="form-control" id="span4">
+											</div>
+										</div>
+									</div>
+								</div>
+                                
+                                <div class="form-group" id="jobcontent">
+                                    <label>工作内容</label>
+                                    <textarea class="form-control" rows="5" placeholder="请输入工作内容~"
+                                              id="jobcontent1"></textarea>
+                                </div>
+                                <div class="form-group" id="company">
+                                    <label>公司简介</label>
+                                    <textarea class="form-control" rows="7" placeholder="请输入公司简介~"
+                                              id="company1"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright"><span>@CopyRight by Fy</span></div>
+                </div>
+            </div>
+            <!-- show3 -->
+            <div id="show3">
+               <div class="container-fluid">
+				   <div class="row">
+					   <div class="showhidden">
+						   <!-- Nav tabs -->
+						   <ul class="nav nav-tabs" role="tablist" id="forjoblist">
+<!--                                <li role="presentation" class="active"><a href="#1" aria-controls="home" role="tab"-->
+<!--                                                                          data-toggle="tab">Home</a></li>-->
+<!--                                <li role="presentation"><a href="#2" aria-controls="profile" role="tab"-->
+<!--                                                           data-toggle="tab">Profile</a></li>-->
+<!--                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"-->
+<!--                                                           data-toggle="tab">Messages</a></li>-->
+<!--                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"-->
+<!--                                                           data-toggle="tab">Settings</a></li>-->
+						   </ul>
+<!--                            class="tab-pane fade in active"-->
+						   <!-- Tab panes -->
+						   <div class="tab-content">
+							   <div role="tabpanel" id="infoview">
+                                    <li id="forjl">
+                                        <div id="ygjl">
+                                            <img src="image/timg.jpg"/>
+                                            <h4 style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                                                嚯可乐消愁aiohdoaaonda</h4>
+                                            <h5><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>15327421837
+                                            </h5>
+                                            <button class="btn btn-info" id="seejl"><a href="">查看简历</a></button>
+                                            <button class="btn btn-success" id="yes"><span
+                                                    class="glyphicon glyphicon-ok glyphicon" aria-hidden="true"></span>
+                                            </button>
+                                            <button class="btn btn-danger" id="no"><span
+                                                    class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                            </button>
+                                        </div>
+                                    </li>
+							   </div>
+						   </div>
+					   </div>
+				   </div>
+				   <div id="barcon">
+					   <span id="firstPage"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;<span>首页</span></span>
+					   <span id="prePage"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span>&nbsp;<span>上一页</span></span>
+					   <span id="nextPage"><span>下一页</span>&nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></span>
+					   <span id="lastPage"><span>尾页</span>&nbsp;<span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span>
+					   <span><select id="jumpWhere"></select></span>
+					   <span id="jumpPage" onclick="jumpPage()"><span>跳转</span>&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></span>
+				   </div>
+<!--                    <div class="copyright"><span>@CopyRight by Fy</span></div>-->
+			   </div>
+            </div>
+
+            <!-- show4 -->	
+            <div id="show4">
+				<div class="joblist">
+					<ul>
+						<li>java后端开发</li>
+						<li>房地产经纪人</li>
+						<li>谈来年</li>
+						<li>读书</li>
+					</ul>
+				</div>
+				<table class="table table-hover">
+							<tr>
+								<th>用户名</th>
+								<th>联系电话</th>
+								<th>邮箱</th>
+								<th>操作</th>
+							</tr>
+							<tbody id="forjlflag">
+							<!-- 插入区域 -->
+							  <tr>
+                                <td>web前端开发</td>
+                                <td>华为技术科技有限公司</td>
+                                <td>简历状态</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-xs" onclick="handler()">移除</button>
+                                </td>
+                              </tr>
+							</tbody>
+						</table>
+
+						<!-- 分页操作按钮 -->
+						<div id="barcon1">
+						    <span id="firstPage1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;<span>首页</span></span>
+						    <span id="prePage1"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span>&nbsp;<span>上一页</span></span>
+						    <span id="nextPage1"><span>下一页</span>&nbsp;<span class="glyphicon glyphicon-forward" aria-hidden="true"></span></span>
+						    <span id="lastPage1"><span>尾页</span>&nbsp;<span class="glyphicon glyphicon-alert" aria-hidden="true"></span></span>
+						    <span><select id="jumpWhere1"></select></span>
+						    <span id="jumpPage1" onclick="jumpPage1()"><span>跳转</span>&nbsp;<span class="glyphicon glyphicon-send" aria-hidden="true"></span></span>
+						</div>
+            </div>
+
+            <!-- show5 -->
+            <div id="show5">
+				<table class="table table-hover">
+                    <tr>
+                        <th>#</th>
+                        <th>地点</th>
+                        <th>薪资</th>
+                        <th>岗位</th>
+                        <th>工作经验</th>
+                        <th>学历要求</th>
+                        <th>确认入职人数</th>
+                        <th>操作</th>
+                    </tr>
+                    <tbody id="fortr">
+                    <!-- 插入区域 -->
+                      <tr>
+                        <td>1</td>
+                        <td>东西湖区</td>
+                        <td>3k以下</td>
+                        <td>玩</td>
+                        <td>在校生</td>
+                        <td>初中及以下</td>
+                        <td>100</td>
+                        <td>
+                            <button type="button" class="btn btn-primary btn-xs">查看</button>
+							<button type="button" class="btn btn-primary btn-xs" onclick="updateinfo()">编辑</button>
+                            <button type="button" class="btn btn-primary btn-xs  btn-danger">结束招聘</button>
+                        </td>
+                      </tr>
+                    </tbody>
+				</table>
+				
+						<!-- 编辑弹窗 -->
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+									</div>
+									<div class="modal-body">
+										
+										<div>
+										    <div class="container-fluid">
+										        <div class="row">
+										            
+										                <div class="col-md-3">
+										                    <h2>编辑招聘信息</h2>
+										                    <!-- <div>用户名：<input type="text" value="嚯可乐消愁"/></div> -->
+										
+										                    <ul class="nav navbar-nav">
+										                        <li class="dropdown">
+										                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+										                               aria-haspopup="true" aria-expanded="false"><span id="address1">选择地区</span>
+										                                <span class="caret"></span></a>
+										                            <ul class="dropdown-menu" id="ress1">
+										                                <li><a onmouseover="adr()">不限地区</a></li>
+										                                <li><a onmouseover="adr()">武昌区</a></li>
+										                                <li><a onmouseover="adr()">江岸区</a></li>
+										                                <li><a onmouseover="adr()">江汉区</a></li>
+										                                <li><a onmouseover="adr()">洪山区</a></li>
+										                                <li><a onmouseover="adr()">新洲区</a></li>
+										                                <li><a onmouseover="adr()">青山区</a></li>
+										                                <li><a onmouseover="adr()">蔡甸区</a></li>
+										                                <li><a onmouseover="adr()">东西湖区</a></li>
+										                            </ul>
+										                        </li>
+										
+										                        <li class="dropdown">
+										                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+										                               aria-haspopup="true" aria-expanded="false"><span id="paywant1">薪资要求</span>
+										                                <span class="caret"></span></a>
+										                            <ul class="dropdown-menu" id="want1">
+										                                <li><a onmouseover="pay()">不限薪资</a></li>
+										                                <li><a onmouseover="pay()">3k以下</a></li>
+										                                <li><a onmouseover="pay()">3k-5k</a></li>
+										                                <li><a onmouseover="pay()">5k-10k</a></li>
+										                                <li><a onmouseover="pay()">10k-15k</a></li>
+										                                <li><a onmouseover="pay()">15k-20k</a></li>
+										                                <li><a onmouseover="pay()">20k以上</a></li>
+										                            </ul>
+										                        </li>
+										
+										                        <li class="dropdown">
+										                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+										                               aria-haspopup="true" aria-expanded="false"><span id="worktime1">工作经验</span>
+										                                <span class="caret"></span></a>
+										                            <ul class="dropdown-menu" id="time1">
+										                                <li><a onmouseover="work()">不限经验</a></li>
+										                                <li><a onmouseover="work()">在校生</a></li>
+										                                <li><a onmouseover="work()">应届生</a></li>
+										                                <li><a onmouseover="work()">1年以内</a></li>
+										                                <li><a onmouseover="work()">1-3年</a></li>
+										                                <li><a onmouseover="work()">3-5年</a></li>
+										                                <li><a onmouseover="work()">5-10年</a></li>
+										                                <li><a onmouseover="work()">10年以上</a></li>
+										                            </ul>
+										                        </li>
+										
+										                        <li class="dropdown">
+										                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+										                               aria-haspopup="true" aria-expanded="false"><span id="studylevel1">学历要求</span>
+										                                <span class="caret"></span></a>
+										                            <ul class="dropdown-menu" id="level1">
+										                                <li><a onmouseover="stu()">不限学历</a></li>
+										                                <li><a onmouseover="stu()">初中及以下</a></li>
+										                                <li><a onmouseover="stu()">中专/中技</a></li>
+										                                <li><a onmouseover="stu()">高中</a></li>
+										                                <li><a onmouseover="stu()">大专</a></li>
+										                                <li><a onmouseover="stu()">本科</a></li>
+										                                <li><a onmouseover="stu()">硕士</a></li>
+										                                <li><a onmouseover="stu()">博士</a></li>
+										                            </ul>
+										                        </li>
+										                    </ul>
+										                    <button type="button" class="btn btn-primary btn-lg" id="postinfo" onclick="postinfo1()">
+										                        重新发布
+										                    </button>
+										                </div>
+										                <div class="col-md-9">
+															<div class="container-fluid" style="padding:0 0 0 0px;">
+																<div class="row">
+																	<div class="col-md-4" style="padding:0 0 0 0px;">
+																		<div class="form-group">
+																		    <label>工作岗位</label>
+																		    <input type="text" class="form-control" id="job2">
+																		</div>
+																	</div>
+																	<div class="col-md-2">
+																		<div class="form-group">
+																		    <label>工作标签一</label>
+																		    <input type="text" class="form-control" id="spana">
+																		</div>
+																	</div>
+																	<div class="col-md-2">
+																		<div class="form-group">
+																		    <label>工作标签二</label>
+																		    <input type="text" class="form-control" id="spanb">
+																		</div>
+																	</div>
+																	<div class="col-md-2">
+																		<div class="form-group">
+																		    <label>工作标签三</label>
+																		    <input type="text" class="form-control" id="spanc">
+																		</div>
+																	</div>
+																	<div class="col-md-2">
+																		<div class="form-group">
+																		    <label>工作标签四</label>
+																		    <input type="text" class="form-control" id="spand">
+																		</div>
+																	</div>
+																</div>
+															</div>
+										                    
+										                    <div class="form-group">
+										                        <label>工作内容</label>
+										                        <textarea class="form-control" rows="5" placeholder="请输入工作内容~"
+										                                  id="jobcontent2"></textarea>
+										                    </div>
+										                    <div class="form-group">
+										                        <label>公司简介</label>
+										                        <textarea class="form-control" rows="7" placeholder="请输入公司简介~"
+										                                  id="company2"></textarea>
+										                    </div>
+										                </div>
+										            
+										        </div>
+										        <div class="copyright"><span>@CopyRight by Fy</span></div>
+										    </div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 修改成功提示 -->
+						<div class="modal fade" id="success">
+							<div class="modal-dialog" style="width: 400px;">
+								<div class="modal-content" style="text-align: center;">
+							<h5 style="font-weight: 800;font-size: 20px;">编辑成功</h5>
+								</div>
+							</div>
+						</div>
+						
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

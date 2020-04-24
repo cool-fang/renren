@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fy.dao.InfoDao">
+
+    <!--通过传入的条件在数据库中搜索并返回到前台展示-->
+    <select id="infoview" parameterType="com.fy.entity.Infospan" resultType="com.fy.entity.Info">
+        select * from Info
+        <where>
+        <if test='place!= "不限地区"and place!="选择地区"'>
+            place=#{place}
+        </if>
+        <if test='pay!= "不限薪资"and pay!="薪资要求"'>
+            and pay=#{pay}
+        </if>
+
+        <if test='time!= "不限经验"and time!="工作经验"'>
+            and time=#{time}
+        </if>
+
+        <if test='level!= "不限学历"and level!="学历要求"'>
+            and level =#{level}
+        </if>
+        <if test='span!= ""'>
+        and (#{span} like CONCAT('%',span1,'%') or
+        #{span} like CONCAT('%',span2,'%') or
+        #{span} like CONCAT('%',span3,'%') or
+        #{span} like CONCAT('%',span4,'%') or
+        job like CONCAT('%',#{span},'%') or
+        name like CONCAT('%',#{span},'%'))
+        </if>
+    </where>
+    </select>
+
+<!--将待要发布的信息存入数据库-->
+        <insert id="postinfo" parameterType="com.fy.entity.Info">
+            insert into info (id,name,place,pay,job,time,level,gs_image,jobcontent,company,span1,span2,span3,span4)values (null,#{name},#{place},#{pay},#{job},#{time},#{level},#{gs_image},#{jobcontent},#{company},#{span1},#{span2},#{span3},#{span4})
+        </insert>
+
+<!--    修改info表中的头像（防止公司发布信息后不停的修改头像）-->
+    <update id="updateoldimage" parameterType="com.fy.entity.Gsyh">
+        update Info set gs_image=#{gs_image} where name=#{name}
+    </update>
+
+<!--    根据url中的id加载jobcontent页面的内容-->
+    <select id="showjobcontent" parameterType="com.fy.entity.Info" resultType="com.fy.entity.Info">
+        select * from Info where id=#{id}
+    </select>
+
+<!--    将数组中id去info表中查询用户收藏的数据返回info对象-->
+    <select id="showyhaixin" parameterType="int" resultType="com.fy.entity.Info">
+        select * from Info where id=#{id}
+    </select>
+
+<!--    查询当前页面是否被用户投过简历-->
+    <select id="findyhinthisjobcontent"  resultType="com.fy.entity.Jobjl">
+        select * from Jobjl where ptyh_id=#{ptyh_id} and info_id=#{info_id}
+    </select>
+
+<!--        上传简历路径-->
+    <insert id="uploadjl" parameterType="com.fy.entity.Jobjl">
+        insert into Jobjl (id,info_id,info_name,info_job,ptyh_id,jl,jlflag,yhthrow,gsthrow)values (null,#{info_id},#{info_name},#{info_job},#{ptyh_id},#{jl},#{jlflag},0,0)
+    </insert>
+
+<!--    根据url的id搜索info对象-->
+    <select id="returninfo" parameterType="Int" resultType="com.fy.entity.Info">
+        select * from Info where id=#{info_id}
+    </select>
+
+    
+    
+<!--关于简历展示    -->
+    <select id="findgsjoblist" parameterType="String" resultType="com.fy.entity.Info">
+        select * from Info where name=#{name}
+    </select>
+
+    
+<!--    操作用户简历-->
+    <select id="showjobjl" parameterType="com.fy.entity.Jobjl" resultType="com.fy.entity.Jobjl">
+        select * from Jobjl where info_name=#{info_name} and info_job=#{info_job} and jlflag='待处理'
+    </select>
+
+<!--        通过jobjl对象获取ptyh对象集合-->
+    <select id="showjl" parameterType="com.fy.entity.Jobjl" resultType="com.fy.entity.Ptyh">
+        select * from Ptyh where id=#{ptyh_id}
+    </select>
+    
+<!--    get用户对应的简历-->
+    <select id="getjllujing" parameterType="com.fy.entity.Jobjl" resultType="com.fy.entity.Jobjl">
+        select * from Jobjl where ptyh_id=#{ptyh_id} and info_job=#{info_job} and info_name=#{info_name}
+    </select>
+
+<!--    热推职位-->
+    <select id="hostjobview" parameterType="String" resultType="com.fy.entity.Info">
+       select * from Info
+       <where>
+
+       #{span} like CONCAT('%',span1,'%') or
+       #{span} like CONCAT('%',span2,'%') or
+       #{span} like CONCAT('%',span3,'%') or
+       #{span} like CONCAT('%',span4,'%') limit 0,9
+    </where>
+    </select>
+
+<!--       修改当前简历信息为未通过状态-->
+    <update id="pass" parameterType="String">
+        update Jobjl set jlflag='未通过' where jl=#{jl}
+    </update>
+
+<!--    简历通过-->
+    <update id="over" parameterType="String">
+        update Jobjl set jlflag='通过' where jl=#{jl}
+    </update>
+
+<!--        简历已查看-->
+    <update id="alredyseejl" parameterType="String">
+        update Jobjl set jlflag='已查看' where jl=#{jl}
+    </update>
+
+<!--        移除通过人员-->
+    <update id="handler" parameterType="com.fy.entity.Jobjl">
+        update Jobjl set gsthrow=1 where info_name=#{info_name} and info_job=#{info_job} and ptyh_id=#{ptyh_id}
+    </update>
+
+<!--    show5-->
+    <select id="returninfolist" parameterType="String" resultType="com.fy.entity.Info">
+        select * from Info where name=#{name}
+    </select>
+
+<!--    show5-->
+    <select id="infototgrs" parameterType="com.fy.entity.Info" resultType="java.lang.Integer">
+        select count(*) from Jobjl WHERE info_id =#{id} and jlflag='通过'
+    </select>
+
+<!--    删除招聘信息-->
+    <delete id="delinfoid" parameterType="java.lang.Integer">
+        delete from Info where id=#{id}
+    </delete>
+
+<!--    编辑招聘信息-->
+    <select id="showoldinfo" parameterType="com.fy.entity.Info" resultType="com.fy.entity.Info">
+        select * from Info where id=#{id}
+    </select>
+
+<!--    //将修改的信息更新数据库-->
+    <update id="updatenewinfo" parameterType="com.fy.entity.Info">
+        update Info set place=#{place} , pay=#{pay} , job=#{job} , time=#{time} , level=#{level} , jobcontent=#{jobcontent} , company=#{company} , span1=#{span1} , span2=#{span2} , span3=#{span3} , span4=#{span4} where id=#{id}
+    </update>
+</mapper>

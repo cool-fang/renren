@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录人人招聘</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jq.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body{
+			background: url(image/canva.jpg) no-repeat
+		}
+		#view{
+			width:740px;
+			height:514px;
+			background-color:black;
+			opacity:0.8;
+			border-radius:10px;
+			margin-top:120px;
+			margin-left:390px;
+
+		}
+		.col-md-4{
+			padding-top:50px;
+			padding-left:25px;
+		}
+		.list-unstyled{
+			color:white;
+		}
+		.list-unstyled>li{
+			height:140px;
+			border-right:2px solid #fff;
+		}
+		#tubiao{
+			font-size:50px;
+			float:left;
+			line-height:140px;
+		}
+		#miaoshu1{
+			display:block;
+			margin-left:60px;
+			font-weight: 700;
+			font-size:20px;
+			padding-top:45px;
+		}
+		#miaoshu2{
+			display:block;
+			margin-left:60px;
+
+		}
+		.col-md-8{
+			padding-top:50px;
+		}
+		#input1{
+			margin:20px 30px 50px 30px;
+		}
+		.input-group-lg>.input-group-addon{
+			padding:3px 10px 0px 8px;
+		}
+		.input-group-addon{
+			padding:0px;
+		}
+		.input-group-lg>.input-group-addon{
+			font-size:30px;
+		}
+		.btn-lg{
+			padding: 10px 120px;
+			margin-left:95px;
+		}
+		#tishi{
+			position: absolute;
+			top:480px;
+			left: 350px;
+			
+		}
+		#tishi>a{
+			text-decoration:none;
+		}
+		#eye{
+			cursor:pointer;
+		}
+		#a1,#a2{
+			display:block;
+			float:left;
+			width:155px;
+			height:36px;
+			margin-right:18px;
+			color:white;
+			border:1px solid white;
+			line-height:36px;
+			text-align:center;
+			border-radius:5px;
+			cursor: pointer;
+		}
+		#a1{
+			border:1px solid #5dd5c8;
+		}
+		#table1,#table2{
+			margin-top:100px;
+		}
+		#table2{
+			display:none;
+		}
+		#leftarea2{
+			display:none;
+		}
+		#input2{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding: 10px 30px;
+		}
+		/* 验证码输入 */
+		#code{
+			position: absolute;
+			right: 80px;
+			width: 100px;
+			height: 50px;
+		}
+		#codeinput,#codeinput1{
+			position: absolute;
+			height: 47px ;
+			width: 200px;
+			left: 50px;
+		}
+		#register1,#register2{
+			position: absolute ;
+			top:420px;
+		}
+	</style>
+</head>
+
+<body>
+<div class="container" id="view">
+	<div class="row">
+		<div class="col-md-4" id="md-4">
+			<ul class="list-unstyled" id="leftarea1">
+				<li>
+					<span class="glyphicon glyphicon-map-marker" aria-hidden="true" id="tubiao" ></span>
+					<span id="miaoshu1">自由</span>
+					<span id="miaoshu2">上班地点随心选择</span>
+				</li>
+				<li>
+					<span class="glyphicon glyphicon glyphicon-list-alt" aria-hidden="true" id="tubiao" ></span>
+					<span id="miaoshu1">详细</span>
+					<span id="miaoshu2">工作待遇一目了然</span>
+				</li>
+				<li>
+					<span class="glyphicon glyphicon-ok" aria-hidden="true" id="tubiao" ></span>
+					<span id="miaoshu1">省心</span>
+					<span id="miaoshu2">简历投放一键直达</span>
+				</li>
+			</ul>
+
+			<!-- 企业招聘左侧面板 -->
+			<ul class="list-unstyled" id="leftarea2">
+				<li>
+					<span class="glyphicon glyphicon-send" aria-hidden="true" id="tubiao" ></span>
+					<span id="miaoshu1">快捷</span>
+					<span id="miaoshu2">招聘信息一键发布</span>
+				</li>
+				<li>
+					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="tubiao" ></span>
+					<span id="miaoshu1">任性</span>
+					<span id="miaoshu2">更多人才多重选择</span>
+				</li>
+				<li>
+					<span class="glyphicon glyphicon-transfer" aria-hidden="true" id="tubiao" ></span>
+					<span id="miaoshu1">便利</span>
+					<span id="miaoshu2">公司人才双向选择</span>
+				</li>
+			</ul>
+
+		</div>
+		<div class="col-md-8">
+			<span id="a1" style="margin-left:68px;" onclick="show()">我是用户</span>
+			<span id="a2" onclick="hide()">我是公司</span>
+
+			<div id="table1">
+				<div class="input-group input-group-lg" id="input1" data-container="body" data-toggle="popover" data-trigger="onfocus" data-placement="right" data-content="请勿输入非法字符!" >
+					<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+					<input type="text" class="form-control" placeholder="请输入你的平台账号~" aria-describedby="sizing-addon1" id="name1" onblur="showmatter1()">
+				</div>
+
+				<div class="input-group input-group-lg" id="input1" data-container="body" data-toggle="popover" data-trigger="onfocus" data-placement="right" data-content="请勿输入非法字符!">
+					<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-eye-close" aria-hidden="true" onclick="seePwd1()" id="eye"></span></span>
+					<input type="password" class="form-control" placeholder="请输入你的密码~" aria-describedby="sizing-addon1" id="pwd1">
+				</div>
+	
+	<!-- 验证码输入框 -->
+				<input type="text" class="form-control" placeholder="请图片中的验证码~" aria-describedby="sizing-addon1" id="codeinput">
+	
+				<img id="code" src="code.do" onclick="setcode(this)" />
+	
+				<a class="btn btn-default btn-lg" href="#" role="button" id="register1">登录</a><br>
+			</div>
+
+			<div id="table2">
+				<div class="input-group input-group-lg" id="input1" data-container="body" data-toggle="popover" data-trigger="onfocus" data-placement="right" data-content="请勿输入非法字符!" >
+					<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+					<input type="text" class="form-control" placeholder="请输入公司的平台账号~" aria-describedby="sizing-addon1" id="name2" onblur="showmatter2()">
+				</div>
+			
+				<div class="input-group input-group-lg" id="input1" data-container="body" data-toggle="popover" data-trigger="onfocus" data-placement="right" data-content="请勿输入非法字符!">
+					<span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-eye-close" aria-hidden="true" onclick="seePwd1()" id="eye"></span></span>
+					<input type="password" class="form-control" placeholder="请输入你的密码~" aria-describedby="sizing-addon1" id="pwd2">
+				</div>
+				
+				<input type="text" class="form-control" placeholder="请图片中的验证码~" aria-describedby="sizing-addon1" id="codeinput1">
+					
+				<img id="code" src="code.do" onclick="setcode(this)" />
+				<a class="btn btn-default btn-lg" href="#" role="button" id="register2">登录</a><br>
+			</div>
+			
+
+			<div id="tishi"><span>没有账号</span>&nbsp;<a href="register.html">立即注册</a></div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script>
+	function setcode(img){
+		img.src="code.do?number="+Math.random();
+		// $("#code").attr("src",url);
+	}
+	
+	//密码查看隐藏
+function seePwd1(){
+		var pwd1 = document.getElementById("pwd1");
+		var eye1 = document.getElementById("eye1");
+		if(pwd1.type=='password'){
+			pwd1.type = "text";
+			eye.className="glyphicon glyphicon-eye-open";
+		}else{
+			pwd1.type = "password";
+			eye.className="glyphicon glyphicon-eye-close";
+		}
+
+	}
+
+	function seePwd2(){
+			var pwd2 = document.getElementById("pwd2");
+			var eye2 = document.getElementById("eye2");
+			if(pwd2.type=='password'){
+				pwd2.type = "text";
+				eye.className="glyphicon glyphicon-eye-open";
+			}else{
+				pwd2.type = "password";
+				eye2.className="glyphicon glyphicon-eye-close";
+			}
+
+	}
+	// //隐藏显示分开注册
+	var leftarea1 = document.getElementById("leftarea1");
+	var leftarea2 = document.getElementById("leftarea2");
+	var table1 = document.getElementById("table1");
+	var table2 = document.getElementById("table2");
+	var a1 = document.getElementById("a1");
+	var a2 = document.getElementById("a2");
+	function show(){
+		leftarea1.style.display="block";
+		table1.style.display="block";
+		leftarea2.style.display="none";
+		table2.style.display="none";
+		a1.style.borderColor="#5dd5c8";
+		a2.style.borderColor="white";
+	}
+
+	function hide(){
+		leftarea2.style.display="block";
+		table2.style.display="block";
+		leftarea1.style.display="none";
+		table1.style.display="none";
+		a2.style.borderColor="#5dd5c8";
+		a1.style.borderColor="white";
+	}
+//输入框提示
+	$(function ()
+		      { $("[data-toggle='popover']").popover();
+		      });
+
+//格式判断
+	function showmatter1(){
+	var i =document.getElementById("name1").value;
+	var h =document.getElementById("name1");
+
+ 	if( !(/[A-Za-z0-9_\-\u4e00-\u9fa5]+/.test(i))){
+		//$("#name1").append("禁止使用非法字符或者为空！");
+  		alert("禁止使用非法字符或者为空！");
+  		h.value="";
+ 	}
+
+}
+	function showmatter2(){
+		var e =document.getElementById("name2").value;
+		var f =document.getElementById("name2");
+
+	 	if( !(/[A-Za-z0-9_\-\u4e00-\u9fa5]+/.test(e))){
+	  		alert("请勿输入其它非法字符！");
+	  		f.value="";
+	 	}
+
+}
+ 	
+ 	function showmatter5(){
+		var pwd3 =document.getElementById("pwd3").value;
+		var pwd4 =document.getElementById("pwd3");
+		if( !(/[A-Za-z0-9_\-\u4e00-\u9fa5]+/.test(pwd3))){
+	  		alert("请勿输入其它非法字符！");
+	  		pwd4.value="";
+	 	}
+
+ 	}
+ 	function showmatter6(){
+ 		var pwd5 =document.getElementById("pwd3").value;
+		var pwd6 =document.getElementById("pwd3");
+		var pwd7 =document.getElementById("pwd4").value;
+		var pwd8 =document.getElementById("pwd4");
+		if( !(/[A-Za-z0-9_\-\u4e00-\u9fa5]+/.test(pwd7))){
+ 	  		alert("请勿输入其它非法字符！");
+ 	  		pwd8.value="";
+ 	 	}
+		
+ 	}
+
+
+
+//ajax传值到后台控制端
+	$(function () {
+		$("#register1").click(function(){
+		        //获取到用户输入的数据
+		        var yh_id = $("#name1").val();
+		        var pwd = $("#pwd1").val();
+				var code=$("#codeinput").val();
+		        //通过post提交方式进行提交
+				//console.log(code);
+		        $.post(
+		            "ptlogin.do",
+		            {"yh_id":yh_id,"pwd":pwd,"code":code},
+		            function (data) {
+		                if (data==1){
+							window.location.href ="index.html";
+		                }else if(data==0){
+		                    alert("登录失败，账号或密码错误！")
+		                }else{
+							alert("验证码错误！")
+						}
+		        });
+		    })
+	})
+
+	$(function () {
+		$("#register2").click(function(){
+			//获取到用户输入的数据
+			var gs_id = $("#name2").val();
+			var pwd = $("#pwd2").val();
+			var code=$("#codeinput1").val();
+			//通过post提交方式进行提交
+
+			$.post(
+					"gslogin.do",
+					{"gs_id":gs_id,"pwd":pwd,"code":code},
+					function (data) {
+						if (data==1){
+							window.location.href ="gsindex.html";
+		                }else if(data==0){
+		                    alert("登录失败，账号或密码错误！")
+		                }else{
+							alert("验证码错误！")
+						}
+					});
+		})
+	})
+	
+</script> 
+</html>
